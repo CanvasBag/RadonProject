@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AjustLeastSquare.Combined">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <NestedTypes>
+      <Delegate Name="AjustLeastSquare.Combined.preencherA" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Combined.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="AjustLeastSquare.Combined.preencherB" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Combined.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="AjustLeastSquare.Combined.preencherF" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Combined.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>YkABAdAgAAAAAAAHDIAUCoAACAAQBgByF1hAgUoggAA=</HashCode>
+      <FileName>Combined.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AjustLeastSquare.LinearParametric">
+    <Position X="7.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IkABAIAgAAAAAAAHDIAUCoCACAAABAAwFBhAgQAAgAA=</HashCode>
+      <FileName>LinearParametric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AjustLeastSquare.NonLinearParametric">
+    <Position X="4.25" Y="0.5" Width="2.75" />
+    <NestedTypes>
+      <Delegate Name="AjustLeastSquare.NonLinearParametric.preencherA" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>NonLinearParametric.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="AjustLeastSquare.NonLinearParametric.preencherF" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>NonLinearParametric.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>YkABAYAgAAAAAAAHDIAUCoAACAAQBAByFFhAgUoggAA=</HashCode>
+      <FileName>NonLinearParametric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

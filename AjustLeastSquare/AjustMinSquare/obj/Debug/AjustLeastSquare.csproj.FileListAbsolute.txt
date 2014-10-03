@@ -1,0 +1,43 @@
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\AjustMinSquare\ajustMinSquare\bin\Debug\AjustLeastSquare.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\AjustMinSquare\ajustMinSquare\bin\Debug\AjustLeastSquare.pdb
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\AjustMinSquare\ajustMinSquare\bin\Debug\MathNet.Iridium.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\AjustMinSquare\ajustMinSquare\bin\Debug\MathNet.Iridium.pdb
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\AjustMinSquare\ajustMinSquare\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\AjustMinSquare\ajustMinSquare\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\AjustMinSquare\ajustMinSquare\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\AjustMinSquare\ajustMinSquare\obj\Debug\ResolveAssemblyReference.cache
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\AjustMinSquare\ajustMinSquare\obj\Debug\AjustLeastSquare.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\AjustMinSquare\ajustMinSquare\obj\Debug\AjustLeastSquare.pdb
+D:\Lambda Core\OnRail\02 - VStudio Projects\AjustLeastSquare\ajustMinSquare\bin\Debug\AjustLeastSquare.dll
+D:\Lambda Core\OnRail\02 - VStudio Projects\AjustLeastSquare\ajustMinSquare\bin\Debug\AjustLeastSquare.pdb
+D:\Lambda Core\OnRail\02 - VStudio Projects\AjustLeastSquare\ajustMinSquare\bin\Debug\MathNet.Iridium.dll
+D:\Lambda Core\OnRail\02 - VStudio Projects\AjustLeastSquare\ajustMinSquare\bin\Debug\MathNet.Iridium.pdb
+D:\Lambda Core\OnRail\02 - VStudio Projects\AjustLeastSquare\ajustMinSquare\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\Lambda Core\OnRail\02 - VStudio Projects\AjustLeastSquare\ajustMinSquare\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\Lambda Core\OnRail\02 - VStudio Projects\AjustLeastSquare\ajustMinSquare\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\Lambda Core\OnRail\02 - VStudio Projects\AjustLeastSquare\ajustMinSquare\obj\Debug\ResolveAssemblyReference.cache
+D:\Lambda Core\OnRail\02 - VStudio Projects\AjustLeastSquare\ajustMinSquare\obj\Debug\AjustLeastSquare.dll
+D:\Lambda Core\OnRail\02 - VStudio Projects\AjustLeastSquare\ajustMinSquare\obj\Debug\AjustLeastSquare.pdb
+C:\Users\pmendonca\Dropbox\Programa\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\AjustLeastSquare.dll
+C:\Users\pmendonca\Dropbox\Programa\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\AjustLeastSquare.pdb
+C:\Users\pmendonca\Dropbox\Programa\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\MathNet.Iridium.dll
+C:\Users\pmendonca\Dropbox\Programa\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\MathNet.Iridium.pdb
+C:\Users\pmendonca\Dropbox\Programa\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\de\MathNet.Iridium.resources.dll
+C:\Users\pmendonca\Dropbox\Programa\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\es\MathNet.Iridium.resources.dll
+C:\Users\pmendonca\Dropbox\Programa\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\fr\MathNet.Iridium.resources.dll
+C:\Users\pmendonca\Dropbox\Programa\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\pmendonca\Dropbox\Programa\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\obj\Debug\AjustLeastSquare.dll
+C:\Users\pmendonca\Dropbox\Programa\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\obj\Debug\AjustLeastSquare.pdb
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\obj\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\obj\Debug\AjustLeastSquare.dll
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\AjustLeastSquare.dll
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\AjustLeastSquare.pdb
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\MathNet.Iridium.dll
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\MathNet.Iridium.pdb
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\obj\Debug\AjustLeastSquare.pdb
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\BaseCoordinates.dll
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\BaseCoordinates.pdb
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Debug\BaseCoordinates.xml
