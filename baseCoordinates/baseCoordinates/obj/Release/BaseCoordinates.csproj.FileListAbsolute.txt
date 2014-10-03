@@ -1,0 +1,23 @@
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseCoordinates\baseCoordinates\bin\Release\baseCoordinates.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseCoordinates\baseCoordinates\bin\Release\baseCoordinates.pdb
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseCoordinates\baseCoordinates\obj\Release\ResolveAssemblyReference.cache
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseCoordinates\baseCoordinates\obj\Release\baseCoordinates.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseCoordinates\baseCoordinates\obj\Release\baseCoordinates.pdb
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseCoordinates\baseCoordinates\bin\Release\BaseCoordinates.xml
+D:\Lambda Core\OnRail\02 - VStudio Projects\baseCoordinates\baseCoordinates\bin\Release\BaseCoordinates.xml
+D:\Lambda Core\OnRail\02 - VStudio Projects\baseCoordinates\baseCoordinates\bin\Release\BaseCoordinates.dll
+D:\Lambda Core\OnRail\02 - VStudio Projects\baseCoordinates\baseCoordinates\bin\Release\BaseCoordinates.pdb
+D:\Lambda Core\OnRail\02 - VStudio Projects\baseCoordinates\baseCoordinates\obj\Release\ResolveAssemblyReference.cache
+D:\Lambda Core\OnRail\02 - VStudio Projects\baseCoordinates\baseCoordinates\obj\Release\BaseCoordinates.dll
+D:\Lambda Core\OnRail\02 - VStudio Projects\baseCoordinates\baseCoordinates\obj\Release\BaseCoordinates.pdb
+C:\Users\pmendonca\Dropbox\Programa\02 - Projectos Visual Studio\baseCoordinates\baseCoordinates\bin\Release\BaseCoordinates.dll
+C:\Users\pmendonca\Dropbox\Programa\02 - Projectos Visual Studio\baseCoordinates\baseCoordinates\bin\Release\BaseCoordinates.pdb
+C:\Users\pmendonca\Dropbox\Programa\02 - Projectos Visual Studio\baseCoordinates\baseCoordinates\obj\Release\ResolveAssemblyReference.cache
+C:\Users\pmendonca\Dropbox\Programa\02 - Projectos Visual Studio\baseCoordinates\baseCoordinates\obj\Release\BaseCoordinates.dll
+C:\Users\pmendonca\Dropbox\Programa\02 - Projectos Visual Studio\baseCoordinates\baseCoordinates\obj\Release\BaseCoordinates.pdb
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\baseCoordinates\baseCoordinates\bin\Release\BaseCoordinates.dll
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\baseCoordinates\baseCoordinates\bin\Release\BaseCoordinates.pdb
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\baseCoordinates\baseCoordinates\obj\Release\ResolveAssemblyReference.cache
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\baseCoordinates\baseCoordinates\obj\Release\BaseCoordinates.dll
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\baseCoordinates\baseCoordinates\obj\Release\BaseCoordinates.pdb
+D:\Dropbox\Radon Project\02 - Projectos Visual Studio\baseCoordinates\baseCoordinates\bin\Release\BaseCoordinates.xml
