@@ -1,0 +1,38 @@
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Build\Debug\MathNet.Iridium.dll
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Build\Debug\MathNet.Iridium.pdb
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Build\Debug\es\MathNet.Iridium.resources.dll
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Build\Debug\fr\MathNet.Iridium.resources.dll
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Build\Debug\de\MathNet.Iridium.resources.dll
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\ResolveAssemblyReference.cache
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Numerics.Properties.Resources.resources
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Numerics.Properties.Resources.es.resources
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Numerics.Properties.Resources.fr.resources
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Numerics.Properties.Resources.de.resources
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\ResGen.read.1.tlog
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\ResGen.write.1.tlog
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\es\MathNet.Iridium.resources.dll
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\fr\MathNet.Iridium.resources.dll
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\de\MathNet.Iridium.resources.dll
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Iridium.dll
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Iridium.pdb
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\GenerateResource.read.1.tlog
+I:\VSProjects\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\GenerateResource.write.1.tlog
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Build\Debug\MathNet.Iridium.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Build\Debug\MathNet.Iridium.pdb
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Build\Debug\es\MathNet.Iridium.resources.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Build\Debug\fr\MathNet.Iridium.resources.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Build\Debug\de\MathNet.Iridium.resources.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\ResolveAssemblyReference.cache
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Numerics.Properties.Resources.resources
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Numerics.Properties.Resources.es.resources
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Numerics.Properties.Resources.fr.resources
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Numerics.Properties.Resources.de.resources
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\GenerateResource.read.1.tlog
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\ResGen.read.1.tlog
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\GenerateResource.write.1.tlog
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\ResGen.write.1.tlog
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\es\MathNet.Iridium.resources.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\fr\MathNet.Iridium.resources.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\de\MathNet.Iridium.resources.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Iridium.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Iridium.pdb
