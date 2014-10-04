@@ -1,0 +1,17 @@
+D:\Os Meus Documentos\Cenas Minhas\Projectos\OnRail\02 - VStudio Projects\baseTime\baseTime\bin\Debug\baseTime.dll
+D:\Os Meus Documentos\Cenas Minhas\Projectos\OnRail\02 - VStudio Projects\baseTime\baseTime\bin\Debug\baseTime.pdb
+D:\Os Meus Documentos\Cenas Minhas\Projectos\OnRail\02 - VStudio Projects\baseTime\baseTime\obj\Debug\ResolveAssemblyReference.cache
+D:\Os Meus Documentos\Cenas Minhas\Projectos\OnRail\02 - VStudio Projects\baseTime\baseTime\obj\Debug\baseTime.dll
+D:\Os Meus Documentos\Cenas Minhas\Projectos\OnRail\02 - VStudio Projects\baseTime\baseTime\obj\Debug\baseTime.pdb
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseTime\baseTime\bin\Debug\BaseTime.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseTime\baseTime\bin\Debug\BaseTime.pdb
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseTime\baseTime\obj\Debug\ResolveAssemblyReference.cache
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseTime\baseTime\obj\Debug\BaseTime.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseTime\baseTime\obj\Debug\BaseTime.pdb
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseTime\baseTime\bin\Debug\BaseTime.XML
+D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\bin\Debug\BaseTime.dll
+D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\bin\Debug\BaseTime.pdb
+D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\obj\Debug\ResolveAssemblyReference.cache
+D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\obj\Debug\BaseTime.dll
+D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\obj\Debug\BaseTime.pdb
+D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\bin\Debug\BaseTime.XML

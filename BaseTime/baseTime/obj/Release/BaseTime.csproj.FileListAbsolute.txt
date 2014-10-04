@@ -1,0 +1,12 @@
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseTime\baseTime\bin\Release\BaseTime.XML
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseTime\baseTime\bin\Release\BaseTime.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseTime\baseTime\bin\Release\BaseTime.pdb
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseTime\baseTime\obj\Release\ResolveAssemblyReference.cache
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseTime\baseTime\obj\Release\BaseTime.dll
+D:\Os Meus Documentos\My Dropbox\Programa\02 - Projectos Visual Studio\BaseTime\baseTime\obj\Release\BaseTime.pdb
+D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\bin\Release\BaseTime.XML
+D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\bin\Release\BaseTime.dll
+D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\bin\Release\BaseTime.pdb
+D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\obj\Release\ResolveAssemblyReference.cache
+D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\obj\Release\BaseTime.dll
+D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\obj\Release\BaseTime.pdb

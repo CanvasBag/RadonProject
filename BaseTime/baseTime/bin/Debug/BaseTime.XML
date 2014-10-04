@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BaseTime</name>
+    </assembly>
+    <members>
+        <member name="M:baseTime.Elements.WeekGPSTime.#ctor(System.Double,System.Int32,System.String)">
+            <summary>
+            cria um objecto gpsWeekTime
+            </summary>
+            <param name="gpsWeekTime_, must be grater than 0 and less than 604800"></param>
+            <param name="id_"></param>
+        </member>
+        <member name="M:baseTime.Elements.WeekGPSTime.#ctor(System.Double,System.String)">
+            <summary>
+            cria um objecto gpsWeekTime
+            </summary>
+            <param name="gpsWeekTime_, must be grater than 0 and less than 604800"></param>
+            <param name="id_"></param>
+        </member>
+        <member name="M:baseTime.Elements.WeekGPSTime.#ctor(System.Double)">
+            <summary>
+            cria um objecto gpsWeekTime
+            </summary>
+            <param name="gpsWeekTime_, must be grater than 0 and less than 604800"></param>
+        </member>
+        <member name="M:baseTime.Elements.WeekGPSTime.CompareTo(baseTime.Elements.WeekGPSTime)">
+            <summary>
+            compara o id com outro objecto WeekGPSTime
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="P:baseTime.Elements.WeekGPSTime.GPSW">
+            <summary>
+            define e retorna a semana GPS
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:baseTime.Elements.WeekGPSTime.GPSWTime" -->
+        <member name="P:baseTime.Elements.WeekGPSTime.ID">
+            <summary>
+            define e retorna o ID
+            </summary>
+        </member>
+        <member name="T:baseTime.Elements.CompareID_WeekGPSTime">
+            <summary>
+            comparar Objecto WeekGPSTime pelo seu ID
+            </summary>
+        </member>
+        <member name="M:baseTime.Elements.JulianDate.CompareTo(baseTime.Elements.JulianDate)">
+            <summary>
+            compara o id com outro objecto JulianDate
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="P:baseTime.Elements.JulianDate.JD">
+            <summary>
+            define e retorna o valor da data Juliana
+            </summary>
+        </member>
+        <member name="P:baseTime.Elements.JulianDate.ID">
+            <summary>
+            define e retorna o ID
+            </summary>
+        </member>
+        <member name="T:baseTime.Elements.CompareID_JD">
+            <summary>
+            comparar Objecto JulianDate pelo seu ID
+            </summary>
+        </member>
+        <member name="M:baseTime.Seed.GeoTime.add_GPSTimeObj(baseTime.Elements.GPSTime)">
+            <summary>
+            adiciona um objecto GPSTime
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:baseTime.Seed.GeoTime.add_JDTimeObj(baseTime.Elements.JulianDate)">
+            <summary>
+            adiciona um objecto JulianDate
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:baseTime.Seed.GeoTime.add_W_GPSTimeObj(baseTime.Elements.WeekGPSTime)">
+            <summary>
+            adiciona um objecto WeekGPSTime
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:baseTime.Seed.GeoTime.add_DateTimerObj(baseTime.Elements.DateTimer)">
+            <summary>
+            adiciona um objecto DateTimer
+            </summary>
+            <param name="dateObj"></param>
+        </member>
+        <member name="M:baseTime.Seed.GeoTime.getListGPSTime(System.String)">
+            <summary>
+            devolve a lista de objectos GPSTime com o id definido 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:baseTime.Seed.GeoTime.getListJulianDate(System.String)">
+            <summary>
+            devolve a lista de objectos JulianDate com o id definido 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:baseTime.Seed.GeoTime.getListWeekGPSTime(System.String)">
+            <summary>
+            devolve a lista de objectos WeekGPSTime com o id definido
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:baseTime.Seed.GeoTime.getListDateTimer(System.String)">
+            <summary>
+            devolve a lista de objectos DateTimer com o id definido 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:baseTime.Seed.GeoTime.ListGPSTime">
+            <summary>
+            define e retorna a lista de objectos GPSTime 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:baseTime.Seed.GeoTime.ListJulianDate">
+            <summary>
+            devolve a lista de objectos JulianDate
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:baseTime.Seed.GeoTime.ListWeekGPSTime">
+            <summary>
+            devolve a lista de objectos WeekGPSTime
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:baseTime.Seed.GeoTime.ListDateTimer">
+            <summary>
+            devolve a lista de objectos DateTimer
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:baseTime.Elements.GPSTime.CompareTo(baseTime.Elements.GPSTime)">
+            <summary>
+            compara o id com outro objecto GPSTime
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="P:baseTime.Elements.GPSTime.GPS_Time">
+            <summary>
+            define e retorna o valor do tempo Gps
+            </summary>
+        </member>
+        <member name="P:baseTime.Elements.GPSTime.ID">
+            <summary>
+            define e retorna o ID
+            </summary>
+        </member>
+        <member name="T:baseTime.Elements.CompareID_GPSTime">
+            <summary>
+            comparar Objecto GPSTime pelo seu ID
+            </summary>
+        </member>
+        <member name="M:baseTime.Elements.DateTimer.getDateTime">
+            <summary>
+            retorna o objecto DateTime
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:baseTime.Elements.DateTimer.CompareTo(baseTime.Elements.DateTimer)">
+            <summary>
+            compara o id com outro objecto JulianDate
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="P:baseTime.Elements.DateTimer.Date">
+            <summary>
+            define e retorna a data
+            </summary>
+        </member>
+        <member name="P:baseTime.Elements.DateTimer.ID">
+            <summary>
+            define e retorna o ID
+            </summary>
+        </member>
+        <member name="T:baseTime.Elements.CompareID_DateTimer">
+            <summary>
+            comparar Objecto DateTimer pelo seu ID
+            </summary>
+        </member>
+    </members>
+</doc>
