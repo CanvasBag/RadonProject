@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GeoMathLib.Transformations.Geocentric">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAI=</HashCode>
+      <FileName>Transformations\Geocentric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoMathLib.Transformations.Helmert">
+    <Position X="2.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAABAEBgAAAAAEAICIACAAUAIAAYgA0AAIAABAE=</HashCode>
+      <FileName>Transformations\Helmert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoMathLib.SIUnits">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAQAkAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>SIUnits.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoMathLib.Projections.TransverseMercator">
+    <Position X="6.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>Projections\TransverseMercator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoMathLib.Calc.TimeConversion">
+    <Position X="9" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAgQAAAAAoAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Calc\TimeConversion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nivela2console.Ajustment">
+    <Position X="11.5" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="nivela2console.Ajustment.ReadStation">
+        <TypeIdentifier>
+          <NewMemberFileName>Calc\Nivela.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACAACAAAAAAQACAQAAAQEIBAIABAQABACAAAEAAAE=</HashCode>
+      <FileName>Calc\Nivela.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

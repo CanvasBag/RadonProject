@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GeoMathLib</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "T:GeoMathLib.Transformations.Geocentric" -->
+        <member name="M:GeoMathLib.Transformations.Geocentric.Forward(BaseCoordinates.Seed.GeoCoord)">
+            <summary>
+            Convert from geodetic to geocentric coordinates (mantains the datum)
+            </summary>
+            <param name="coordGeod">GeoCoord object with geodetic coordinates</param>
+            <Returns>GeoCoord object with geocentric coordinates</Returns>
+        </member>
+        <member name="M:GeoMathLib.Transformations.Geocentric.Reverse(BaseCoordinates.Seed.GeoCoord)">
+            <summary>
+            Convert from geocentric to geodetic coordinates (mantains the datum)
+            </summary>
+            <param name="coordRet"></param>
+            <Returns></Returns>
+        </member>
+        <member name="M:GeoMathLib.Calc.AjustNet2D.HtmlReport.#ctor(System.String,System.Int32,System.Double,System.Double,System.Boolean,System.Double,System.Int32,System.Int32,System.Int32,System.Int32,System.Double,System.Int32,System.Int32,System.Collections.Generic.List{System.Boolean},System.Int32,System.Int32,System.Collections.Generic.List{System.Boolean},System.String,System.String,System.Double,System.String,System.Double,System.Collections.Generic.List{System.Double},BaseCoordinates.Seed.GeoCoord,System.Collections.Generic.List{GeoMathLib.Calc.AjustNet2D.NetAdjust2D.ReadStationDist},System.Collections.Generic.List{GeoMathLib.Calc.AjustNet2D.NetAdjust2D.ReadStationDir})">
+            <summary>
+            Export report do html
+            </summary>
+            <param name="outPutName"></param>
+            <param name="iterations"></param>
+            <param name="varPriori"></param>
+            <param name="varPosteriori"></param>
+            <param name="chiSquareTest"></param>
+            <param name="alpha"></param>
+            <param name="df"></param>
+            <param name="numberOfPoints"></param>
+            <param name="numberOfConstrained"></param>
+            <param name="numberOfFixedPoints"></param>
+            <param name="DataSnoopingRejectionLevel"></param>
+            <param name="numDistances"></param>
+            <param name="numBlunderDistances"></param>
+            <param name="dataSnoopingTestDist"></param>
+            <param name="numDirections"></param>
+            <param name="numBlunderDirections"></param>
+            <param name="dataSnoopingTestDir"></param>
+            <param name="distUnit"></param>
+            <param name="dirUnit"></param>
+            <param name="convertDirUnit"></param>
+            <param name="residuesDirUnit"></param>
+            <param name="convertResDirUnit"></param>
+            <param name="pointsDisplacements"></param>
+            <param name="trigPoints"></param>
+            <param name="listReadDist"></param>
+            <param name="listReadDir"></param>
+        </member>
+        <member name="T:GeoMathLib.Calc.TimeConversion">
+            <summary>
+            (PT) Class de conversão de diferentes tipos de datas
+            (EN) Class to convert between diferent date types
+            </summary>
+        </member>
+        <member name="M:GeoMathLib.Calc.TimeConversion.JD_Langley(baseTime.Elements.DateTimer)">
+            <summary>
+            (PT) Cálculo da data juliana a partir de data gregoriano pelo método de Langley
+            (EN) Caculate julian date from grogorian date using Langley method
+            </summary>
+            <param name="gregorianDate">Gregorian Date: Year, month and day</param>
+            <returns>Copy of DateTimer ID to JulianDate Obj</returns>
+        </member>
+        <member name="M:GeoMathLib.Calc.TimeConversion.JD_Langley(baseTime.Seed.GeoTime)">
+            <summary>
+            (PT) Cálculo da data juliana a partir de data gregoriano pelo método de Langley
+            (EN) Caculate julian date from grogorian date using Langley method 
+            </summary>
+            <param name="gregorianDate"></param>
+            <returns>Copy of DateTimer ID to JulianDate Obj</returns>
+        </member>
+        <member name="M:GeoMathLib.Calc.TimeConversion.JD_Leick(baseTime.Elements.DateTimer)">
+            <summary>
+            (PT) Cálculo da data juliana a partir de data gregoriano pelo método de Leick
+            (EN) Caculate julian date from grogorian date using Leick method 
+            </summary>
+            <param name="gregorianDate">Gregorian Date: Year, month and day</param>
+            <returns>Copy of DateTimer ID to JulianDate Obj</returns>
+        </member>
+        <member name="M:GeoMathLib.Calc.TimeConversion.JD_Leick(baseTime.Seed.GeoTime)">
+            <summary>
+            (PT) Cálculo da data juliana a partir de data gregoriano pelo método de Leick
+            (EN) Caculate julian date from grogorian date using Leick method 
+            </summary>
+            <param name="gregorianDate"></param>
+            <returns>Copy of DateTimer ID to JulianDate Obj</returns>
+        </member>
+        <member name="M:GeoMathLib.Calc.TimeConversion.JD_Hoffman(baseTime.Elements.DateTimer)">
+            <summary>
+            (PT) Cálculo da data juliana a partir de data gregoriano pelo método de Hoffman
+            (EN) Caculate julian date from grogorian date using Hoffman method 
+            </summary>
+            <param name="gregorianDate">Gregorian Date: Year, month, day, hour and minute</param>
+            <returns>Copy of DateTimer ID to JulianDate Obj</returns>
+        </member>
+        <member name="M:GeoMathLib.Calc.TimeConversion.JD_Hoffman(baseTime.Seed.GeoTime)">
+            <summary>
+            (PT) Cálculo da data juliana a partir de data gregoriano pelo método de Hoffman
+            (EN) Caculate julian date from grogorian date using Hoffman method 
+            </summary>
+            <param name="gregorianDate"></param>
+            <returns>Copy of DateTimer ID to JulianDate Obj</returns>
+        </member>
+        <member name="M:GeoMathLib.Calc.TimeConversion.GregorianDate(baseTime.Elements.JulianDate)">
+            <summary>
+            (PT) Cálculo da data gregoriana através da data juliana
+            (EN) Calcuate gregorian date from julian date
+            </summary>
+            <param name="julianD"></param>
+            <returns>Copy of JulianDate ID to DateTimer Obj</returns>
+        </member>
+        <member name="M:GeoMathLib.Calc.TimeConversion.GregorianDate(baseTime.Seed.GeoTime)">
+            <summary>
+            (PT) Cálculo da data gregoriana através da data juliana
+            (EN) Calcuate gregorian date from julian date
+            </summary>
+            <param name="gregorianDate"></param>
+            <returns>Copy of JulianDate ID to DateTimer Obj</returns>
+        </member>
+        <member name="M:GeoMathLib.Transformations.Helmert.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Definição da Transformação de Helmert 7 Parâmetros
+            </summary>
+            <param name="dxIn">translacção em x (metros)</param>
+            <param name="dyIn">translacção em y (metros)</param>
+            <param name="dzIn">translacção em z (metros)</param>
+            <param name="wIn">rotação em x (rad)</param>
+            <param name="fIn">rotação em y (rad)</param>
+            <param name="kIn">rotação em z (rad)</param>
+            <param name="muIn">factor de escala</param>
+        </member>
+        <member name="M:GeoMathLib.Transformations.Helmert.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32,System.Int32)">
+            <summary>
+            Definição da Transformação de Helmert a 14 Parâmetros
+            </summary>
+            <param name="dxIn">translacção em x (metros)</param>
+            <param name="dyIn">translacção em y (metros)</param>
+            <param name="dzIn">translacção em z (metros)</param>
+            <param name="wIn">rotação em x (rad)</param>
+            <param name="fIn">rotação em y (rad)</param>
+            <param name="kIn">rotação em z (rad)</param>
+            <param name="muIn">factor de escala</param>
+            <param name="vdxIn">variação da translacção em x (metros)</param>
+            <param name="vdyIn">variação da translacção em y (metros)</param>
+            <param name="vdzIn">variação da translacção em z (metros)</param>
+            <param name="vwIn">variação da rotação em x (rad)</param>
+            <param name="vfIn">variação da rotação em y (rad)</param>
+            <param name="vkIn">variação da rotação em z (rad)</param>
+            <param name="vmuIn">variação do factor de escala</param>
+            <param name="epoca0">epoca inicial</param>
+            <param name="epocaFinal">epoca final</param>
+        </member>
+        <member name="M:GeoMathLib.Transformations.Helmert.helmert7(BaseCoordinates.Seed.GeoCoord)">
+            <summary>
+            Aplicar a transformação 7 parâmetros
+            </summary>
+            <param name="coordRet">GeoCoord de coordenadas a transformar</param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoMathLib.Transformations.Helmert.Helmert7Inverse(BaseCoordinates.Seed.GeoCoord)">
+            <summary>
+            Aplicar a transformação a 7 parâmetros a partir dos parâmetros inversos definidos
+            </summary>
+            <param name="coordRet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoMathLib.Transformations.Helmert.helmert14(BaseCoordinates.Seed.GeoCoord)">
+            <summary>
+            Aplicar a transformação 14 parâmetros
+            </summary>
+            <param name="coordRet">GeoCoord de coordenadas a transformar</param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoMathLib.Transformations.Helmert.Helmert14Inverse(BaseCoordinates.Seed.GeoCoord)">
+            <summary>
+            Aplicar a transformação a 14 parâmetros a partir dos parâmetros inversos definidos 
+            </summary>
+            <param name="coordRet"></param>
+            <returns></returns>
+        </member>
+        <member name="F:GeoMathLib.SIUnits.Deg2Rad">
+            <summary>
+            Transformação de graus decimais para radianos
+            </summary>
+        </member>
+        <member name="F:GeoMathLib.SIUnits.Seg2Rad">
+            <summary>
+            Transformação de segundos para radianos
+            </summary>
+        </member>
+        <member name="F:GeoMathLib.SIUnits.PPM">
+            <summary>
+            Número em partes por milhão (1e-6)
+            </summary>
+        </member>
+        <member name="F:GeoMathLib.SIUnits.PPB">
+            <summary>
+            Número em partes por bilião (1e-9)
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:GeoMathLib.SIUnits.DMS(System.Double)" -->
+        <member name="M:GeoMathLib.SIUnits.Degree(System.Tuple{System.Int32,System.Int32,System.Double})">
+            <summary>
+            Transformação de gruas decimais para DMS 
+            </summary>
+            <param name="dms"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:GeoMathLib.Projections.TransverseMercator.GaussInversa(BaseCoordinates.Seed.GeoCoord)" -->
+        <member name="M:GeoMathLib.Projections.TransverseMercator.GaussInversa(BaseCoordinates.Elements.EastingNorthing,BaseCoordinates.Geometry.Datum,BaseCoordinates.Geometry.Projection)">
+            <summary>
+            Transversa de Mercator inversa
+            </summary>
+            <param name="coordMPH"></param>
+            <param name="datumIn"></param>
+            <param name="projectionIn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoMathLib.Projections.TransverseMercator.GaussProjection(BaseCoordinates.Seed.GeoCoord,BaseCoordinates.Geometry.Projection)">
+            <summary>
+            Aplica da projecção Transversa de Mercator
+            </summary>
+            <param name="coordLLIn"></param>
+            <param name="projeccaoIn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoMathLib.Projections.TransverseMercator.GaussProjection(BaseCoordinates.Elements.Ll,BaseCoordinates.Geometry.Datum,BaseCoordinates.Geometry.Projection)">
+            <summary>
+            Aplica da projecção Transversa de Mercator
+            </summary>
+            <param name="coordLLIn"></param>
+            <param name="datumIn"></param>
+            <param name="projeccaoIn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoMathLib.Projections.TransverseMercator.arcMeridiano(System.Double,System.Double,BaseCoordinates.Geometry.Elipsoid)">
+            <summary>
+            Calcula o arco de meridiano entre duas latitudes
+            </summary>
+            <param name="lat1">Latitude 1</param>
+            <param name="lat2">Latitude 2</param>
+            <param name="elipsoidIn">Elipsoide de referência</param>
+            <returns>Valor do arco em radianos</returns>
+        </member>
+        <member name="T:GeoMathLib.Calc.AjustNet2D.NetAdjust2D">
+            <summary>
+            PT - Classe de Ajustamento de Redes 2D com pontos fixos ou de Constrangimento Mínimo
+            EN - 2D Network ajustment class, using fixed or constrained points         
+            </summary>
+        </member>
+        <member name="M:GeoMathLib.Calc.AjustNet2D.NetAdjust2D.#ctor(System.String)">
+            <summary>
+            PT - Inicializa uma nova instância do NetAdjust2D
+            EN - Initializes a new instance of the NetAdjust2D
+            </summary>
+            <param name="xmlFile">XML path</param>
+        </member>
+        <member name="M:GeoMathLib.Calc.AjustNet2D.NetAdjust2D.#ctor(System.Collections.Generic.List{GeoMathLib.Calc.AjustNet2D.NetAdjust2D.ReadStationDist},System.Collections.Generic.List{GeoMathLib.Calc.AjustNet2D.NetAdjust2D.ReadStationDir},BaseCoordinates.Seed.GeoCoord)">
+            <summary>
+            PT - Inicializa uma nova instância do NetAdjust2D
+            EN - Initializes a new instance of the NetAdjust2D 
+            </summary>
+            <param name="obsListDistIn">List with of Distances</param>
+            <param name="obsListDirIn">List with of Directions</param>
+            <param name="trigPointsIn">List with of Trignometric Points</param>
+        </member>
+        <member name="M:GeoMathLib.Calc.AjustNet2D.NetAdjust2D.ajustNet(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            PT - ajustamento da rede
+            EN - network ajustment
+            </summary>
+            <param name="a">1º Parâmetro da equação de var das distâncias</param>
+            <param name="b">2º Parâmetro da equação de var das distâncias</param>
+            <param name="varDirections">Stdv direcções em segundos</param>
+            <param name="varAzimuth">Stdv Azimutes em segundos</param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoMathLib.Calc.AjustNet2D.NetAdjust2D.MatrixFilIn.defineA(MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix)">
+            <summary>
+            Matriz de Configuração - Matriz x deve já estar definida
+            </summary>
+        </member>
+        <member name="M:GeoMathLib.Calc.AjustNet2D.NetAdjust2D.MatrixFilIn.defineF(MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix)">
+            <summary>
+            Matriz de Fecho
+            </summary>
+        </member>
+    </members>
+</doc>
