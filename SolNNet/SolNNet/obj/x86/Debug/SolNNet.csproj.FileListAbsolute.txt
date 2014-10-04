@@ -1,0 +1,44 @@
+c:\users\vascoport\documents\visual studio 2010\Projects\SolNNet\SolNNet\bin\Debug\SolNNet.exe
+c:\users\vascoport\documents\visual studio 2010\Projects\SolNNet\SolNNet\bin\Debug\SolNNet.pdb
+c:\users\vascoport\documents\visual studio 2010\Projects\SolNNet\SolNNet\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\vascoport\documents\visual studio 2010\Projects\SolNNet\SolNNet\obj\x86\Debug\SolNNet.SolNNetPrincipalForm.resources
+c:\users\vascoport\documents\visual studio 2010\Projects\SolNNet\SolNNet\obj\x86\Debug\SolNNet.Properties.Resources.resources
+c:\users\vascoport\documents\visual studio 2010\Projects\SolNNet\SolNNet\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\vascoport\documents\visual studio 2010\Projects\SolNNet\SolNNet\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\vascoport\documents\visual studio 2010\Projects\SolNNet\SolNNet\obj\x86\Debug\SolNNet.exe
+c:\users\vascoport\documents\visual studio 2010\Projects\SolNNet\SolNNet\obj\x86\Debug\SolNNet.pdb
+C:\Users\VASCOPORT\Documents\Visual Studio 2010\Projects\SolNNet\SolNNet\obj\x86\Debug\SolNNet.About.resources
+D:\Dropbox\Radon Project\03 - Sketch\SolNNet\SolNNet\obj\x86\Debug\SolNNet.exe
+D:\Dropbox\Radon Project\03 - Sketch\SolNNet\SolNNet\obj\x86\Debug\SolNNet.pdb
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\obj\x86\Debug\SolNNet.exe
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\obj\x86\Debug\SolNNet.pdb
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\SolNNet.exe
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\SolNNet.pdb
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\obj\x86\Debug\SolNNet.SolNNetPrincipalForm.resources
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\obj\x86\Debug\SolNNet.About.resources
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\obj\x86\Debug\SolNNet.Properties.Resources.resources
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\GeoMathLib.dll
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\BaseCoordinates.dll
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\BaseTime.dll
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\MathNet.Iridium.dll
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\AjustLeastSquare.dll
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\GeoMathLib.pdb
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\GeoMathLib.xml
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\BaseCoordinates.pdb
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\BaseCoordinates.xml
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\BaseTime.pdb
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\BaseTime.xml
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\MathNet.Iridium.pdb
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\AjustLeastSquare.pdb
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\AjustLeastSquare.xml
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\obj\x86\Debug\SolNNet.DataConvertFormatsForm.resources
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\obj\x86\Debug\SolNNet.ResiduesForm.resources
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\RP_Dxf.dll
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\bin\Debug\RP_Dxf.pdb
+D:\Lambda Core\Cenas Minhas\Radon Project\03 - Sketch\SolNNet\SolNNet\obj\x86\Debug\SolNNet.FormDxfExport.resources
