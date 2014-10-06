@@ -241,14 +241,24 @@ namespace SolNNet
 
         private void button5_Click(object sender, EventArgs e)
         {
-            drawDisplayPainel_1.zoom(.5);
+            try
+            {
+                drawDisplayPainel_1.zoom(.5);
+
+            }
+            catch
+            { }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             //zoomIn = true;
             //SolNNetPrincipalForm.ActiveForm.Cursor = Cursors.Cross;
-            drawDisplayPainel_1.zoom(1.5);
+            try
+            {
+                drawDisplayPainel_1.zoom(1.5);
+            }
+            catch { }
         }
 
         private void reportBut_Click(object sender, EventArgs e)
@@ -272,8 +282,13 @@ namespace SolNNet
 
         private void elipseBut_Click(object sender, EventArgs e)
         {
-            drawDisplayPainel_1.ElipseOn = drawDisplayPainel_1.ElipseOn == 2 ? 0 : drawDisplayPainel_1.ElipseOn + 1;
-            drawDisplayPainel_1.draw();
+            try
+            {
+                drawDisplayPainel_1.ElipseOn = drawDisplayPainel_1.ElipseOn == 2 ? 0 : drawDisplayPainel_1.ElipseOn + 1;
+                drawDisplayPainel_1.draw();
+            }
+            catch
+            {}
         }
 
         private void gridBut_Click(object sender, EventArgs e)
@@ -290,8 +305,13 @@ namespace SolNNet
 
         private void button3_Click(object sender, EventArgs e)
         {
-            drawDisplayPainel_1.ArrowOn = !drawDisplayPainel_1.ArrowOn;
-            drawDisplayPainel_1.draw();
+            try
+            {
+                drawDisplayPainel_1.ArrowOn = !drawDisplayPainel_1.ArrowOn;
+                drawDisplayPainel_1.draw();
+            }            
+            catch
+            { }
         }
 
         private void dXFToolStripMenuItem1_Click(object sender, EventArgs e)

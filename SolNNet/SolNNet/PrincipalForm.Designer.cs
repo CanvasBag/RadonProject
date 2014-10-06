@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SolNNetPrincipalForm));
             this.PrincipalFormMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -99,6 +100,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.displacementScaleTBox = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.ellipseScaleTBox = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.confidanceElipseTBox = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.cBoxSincDisplayAndObs = new System.Windows.Forms.CheckBox();
@@ -111,6 +116,7 @@
             this.varPosterioriLabel = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.eixoYY4Label = new System.Windows.Forms.Label();
             this.eixoXX1Label = new System.Windows.Forms.Label();
             this.eixoXX3Label = new System.Windows.Forms.Label();
             this.eixoXX2Label = new System.Windows.Forms.Label();
@@ -120,6 +126,8 @@
             this.displayPanel = new System.Windows.Forms.Panel();
             this.mouseCoord = new System.Windows.Forms.Label();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape26 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape24 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape23 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape22 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape20 = new Microsoft.VisualBasic.PowerPacks.LineShape();
@@ -155,13 +163,7 @@
             this.lineShape9 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.escalaElipseLabel = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.lineShape24 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape26 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.eixoYY4Label = new System.Windows.Forms.Label();
-            this.ellipseScaleTBox = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.displacementScaleTBox = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.PrincipalFormMenuStrip.SuspendLayout();
             this.DataGroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -209,25 +211,25 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.newToolStripMenuItem.Text = "New";
             // 
             // openProjectToolStripMenuItem
             // 
             this.openProjectToolStripMenuItem.Name = "openProjectToolStripMenuItem";
-            this.openProjectToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openProjectToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.openProjectToolStripMenuItem.Text = "Open";
             // 
             // saveProjectToolStripMenuItem
             // 
             this.saveProjectToolStripMenuItem.Name = "saveProjectToolStripMenuItem";
-            this.saveProjectToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveProjectToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.saveProjectToolStripMenuItem.Text = "Save";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(144, 6);
             // 
             // exportResultsToolStripMenuItem
             // 
@@ -238,48 +240,48 @@
             this.dXFToolStripMenuItem,
             this.dXFToolStripMenuItem1});
             this.exportResultsToolStripMenuItem.Name = "exportResultsToolStripMenuItem";
-            this.exportResultsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exportResultsToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.exportResultsToolStripMenuItem.Text = "Export Results";
             // 
             // xMLToolStripMenuItem
             // 
             this.xMLToolStripMenuItem.Name = "xMLToolStripMenuItem";
-            this.xMLToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.xMLToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.xMLToolStripMenuItem.Text = "XML";
             // 
             // hTMLToolStripMenuItem
             // 
             this.hTMLToolStripMenuItem.Name = "hTMLToolStripMenuItem";
-            this.hTMLToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.hTMLToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.hTMLToolStripMenuItem.Text = "HTML";
             // 
             // tXTToolStripMenuItem
             // 
             this.tXTToolStripMenuItem.Name = "tXTToolStripMenuItem";
-            this.tXTToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tXTToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.tXTToolStripMenuItem.Text = "TXT";
             // 
             // dXFToolStripMenuItem
             // 
             this.dXFToolStripMenuItem.Name = "dXFToolStripMenuItem";
-            this.dXFToolStripMenuItem.Size = new System.Drawing.Size(149, 6);
+            this.dXFToolStripMenuItem.Size = new System.Drawing.Size(104, 6);
             // 
             // dXFToolStripMenuItem1
             // 
             this.dXFToolStripMenuItem1.Name = "dXFToolStripMenuItem1";
-            this.dXFToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.dXFToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
             this.dXFToolStripMenuItem1.Text = "DXF";
             this.dXFToolStripMenuItem1.Click += new System.EventHandler(this.dXFToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(144, 6);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.sairToolStripMenuItem.Text = "Exit";
             // 
             // optionsToolStripMenuItem
@@ -908,6 +910,40 @@
             this.tabPage4.Text = "Options";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // displacementScaleTBox
+            // 
+            this.displacementScaleTBox.Location = new System.Drawing.Point(140, 117);
+            this.displacementScaleTBox.Name = "displacementScaleTBox";
+            this.displacementScaleTBox.Size = new System.Drawing.Size(52, 20);
+            this.displacementScaleTBox.TabIndex = 6;
+            this.displacementScaleTBox.Text = "1000";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(28, 120);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(106, 13);
+            this.label22.TabIndex = 5;
+            this.label22.Text = "Displacements Scale";
+            // 
+            // ellipseScaleTBox
+            // 
+            this.ellipseScaleTBox.Location = new System.Drawing.Point(141, 83);
+            this.ellipseScaleTBox.Name = "ellipseScaleTBox";
+            this.ellipseScaleTBox.Size = new System.Drawing.Size(52, 20);
+            this.ellipseScaleTBox.TabIndex = 4;
+            this.ellipseScaleTBox.Text = "1000";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(67, 87);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(67, 13);
+            this.label21.TabIndex = 3;
+            this.label21.Text = "Ellipse Scale";
+            // 
             // confidanceElipseTBox
             // 
             this.confidanceElipseTBox.Location = new System.Drawing.Point(141, 49);
@@ -1040,6 +1076,16 @@
             this.groupBox2.Text = "Display";
             this.groupBox2.MouseHover += new System.EventHandler(this.groupBox2_MouseHover);
             // 
+            // eixoYY4Label
+            // 
+            this.eixoYY4Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eixoYY4Label.Location = new System.Drawing.Point(5, 82);
+            this.eixoYY4Label.Name = "eixoYY4Label";
+            this.eixoYY4Label.Size = new System.Drawing.Size(30, 10);
+            this.eixoYY4Label.TabIndex = 11;
+            this.eixoYY4Label.Text = "120";
+            this.eixoYY4Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // eixoXX1Label
             // 
             this.eixoXX1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1155,6 +1201,22 @@
             this.shapeContainer1.Size = new System.Drawing.Size(412, 456);
             this.shapeContainer1.TabIndex = 10;
             this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape26
+            // 
+            this.lineShape26.Name = "lineShape26";
+            this.lineShape26.X1 = 29;
+            this.lineShape26.X2 = 38;
+            this.lineShape26.Y1 = 70;
+            this.lineShape26.Y2 = 70;
+            // 
+            // lineShape24
+            // 
+            this.lineShape24.Name = "lineShape24";
+            this.lineShape24.X1 = 33;
+            this.lineShape24.X2 = 37;
+            this.lineShape24.Y1 = 30;
+            this.lineShape24.Y2 = 30;
             // 
             // lineShape23
             // 
@@ -1331,6 +1393,7 @@
             this.button2.Size = new System.Drawing.Size(27, 23);
             this.button2.TabIndex = 9;
             this.button2.Text = "+";
+            this.toolTip1.SetToolTip(this.button2, "Zoom In");
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button2.MouseHover += new System.EventHandler(this.groupBox2_MouseHover);
@@ -1342,6 +1405,7 @@
             this.button5.Size = new System.Drawing.Size(27, 23);
             this.button5.TabIndex = 10;
             this.button5.Text = "-";
+            this.toolTip1.SetToolTip(this.button5, "Zoom Out");
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             this.button5.MouseHover += new System.EventHandler(this.groupBox2_MouseHover);
@@ -1353,12 +1417,15 @@
             this.fitViewBut.Name = "fitViewBut";
             this.fitViewBut.Size = new System.Drawing.Size(28, 23);
             this.fitViewBut.TabIndex = 11;
+            this.fitViewBut.Tag = "";
+            this.toolTip1.SetToolTip(this.fitViewBut, "Fit View");
             this.fitViewBut.UseVisualStyleBackColor = true;
             this.fitViewBut.Click += new System.EventHandler(this.button6_Click);
             this.fitViewBut.MouseHover += new System.EventHandler(this.groupBox2_MouseHover);
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Font = new System.Drawing.Font("Algerian", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(552, 516);
             this.button1.Name = "button1";
@@ -1399,6 +1466,7 @@
             this.elipseBut.Name = "elipseBut";
             this.elipseBut.Size = new System.Drawing.Size(27, 23);
             this.elipseBut.TabIndex = 15;
+            this.toolTip1.SetToolTip(this.elipseBut, "Ellipses Stdv/Confidance/Off");
             this.elipseBut.UseVisualStyleBackColor = true;
             this.elipseBut.Click += new System.EventHandler(this.elipseBut_Click);
             // 
@@ -1409,6 +1477,7 @@
             this.gridBut.Name = "gridBut";
             this.gridBut.Size = new System.Drawing.Size(27, 23);
             this.gridBut.TabIndex = 16;
+            this.toolTip1.SetToolTip(this.gridBut, "Grid On/Denser/Off");
             this.gridBut.UseVisualStyleBackColor = true;
             this.gridBut.Click += new System.EventHandler(this.gridBut_Click);
             // 
@@ -1467,68 +1536,9 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(27, 23);
             this.button3.TabIndex = 20;
+            this.toolTip1.SetToolTip(this.button3, "Vectors");
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // lineShape24
-            // 
-            this.lineShape24.Name = "lineShape24";
-            this.lineShape24.X1 = 33;
-            this.lineShape24.X2 = 37;
-            this.lineShape24.Y1 = 30;
-            this.lineShape24.Y2 = 30;
-            // 
-            // lineShape26
-            // 
-            this.lineShape26.Name = "lineShape26";
-            this.lineShape26.X1 = 29;
-            this.lineShape26.X2 = 38;
-            this.lineShape26.Y1 = 70;
-            this.lineShape26.Y2 = 70;
-            // 
-            // eixoYY4Label
-            // 
-            this.eixoYY4Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eixoYY4Label.Location = new System.Drawing.Point(5, 82);
-            this.eixoYY4Label.Name = "eixoYY4Label";
-            this.eixoYY4Label.Size = new System.Drawing.Size(30, 10);
-            this.eixoYY4Label.TabIndex = 11;
-            this.eixoYY4Label.Text = "120";
-            this.eixoYY4Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // ellipseScaleTBox
-            // 
-            this.ellipseScaleTBox.Location = new System.Drawing.Point(141, 83);
-            this.ellipseScaleTBox.Name = "ellipseScaleTBox";
-            this.ellipseScaleTBox.Size = new System.Drawing.Size(52, 20);
-            this.ellipseScaleTBox.TabIndex = 4;
-            this.ellipseScaleTBox.Text = "1000";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(67, 87);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(67, 13);
-            this.label21.TabIndex = 3;
-            this.label21.Text = "Ellipse Scale";
-            // 
-            // displacementScaleTBox
-            // 
-            this.displacementScaleTBox.Location = new System.Drawing.Point(140, 117);
-            this.displacementScaleTBox.Name = "displacementScaleTBox";
-            this.displacementScaleTBox.Size = new System.Drawing.Size(52, 20);
-            this.displacementScaleTBox.TabIndex = 6;
-            this.displacementScaleTBox.Text = "1000";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(28, 120);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(106, 13);
-            this.label22.TabIndex = 5;
-            this.label22.Text = "Displacements Scale";
             // 
             // SolNNetPrincipalForm
             // 
@@ -1723,6 +1733,7 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox ellipseScaleTBox;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
