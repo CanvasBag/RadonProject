@@ -40,6 +40,22 @@ namespace SolNNet
         public SolNNetPrincipalForm()
         {
             InitializeComponent();
+
+            // desativacao dos botoes de funcionalidades
+            // que ainda nao estao implementadas
+            newToolStripMenuItem.Enabled = false;
+            openProjectToolStripMenuItem.Enabled = false;
+            saveProjectToolStripMenuItem.Enabled = false;
+            sairToolStripMenuItem.Enabled = false;
+
+            xMLToolStripMenuItem.Enabled = false;
+            hTMLToolStripMenuItem.Enabled = false;
+            tXTToolStripMenuItem.Enabled = false;
+
+            outputInfoToolStripMenuItem.Enabled = false;
+
+            aboutSolNNetToolStripMenuItem.Enabled = false;
+
         }
 
         #region Buttons
