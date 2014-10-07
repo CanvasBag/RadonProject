@@ -765,7 +765,10 @@ namespace SolNNet
             }
             catch (Exception erro)
             {
-                MessageBox.Show(erro.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                if (!(erro is ArgumentOutOfRangeException))
+                {
+                    MessageBox.Show(erro.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
             }
         }
 

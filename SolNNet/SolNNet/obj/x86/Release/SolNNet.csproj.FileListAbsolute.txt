@@ -90,3 +90,4 @@ C:\Documents and Settings\vconde\Desktop\devel\RadonProject\SolNNet\SolNNet\obj\
 C:\Documents and Settings\vconde\Desktop\devel\RadonProject\SolNNet\SolNNet\obj\x86\Release\GenerateResource.write.1.tlog
 C:\Documents and Settings\vconde\Desktop\devel\RadonProject\SolNNet\SolNNet\obj\x86\Release\SolNNet.AboutBox.resources
 D:\Tese\Radon Project\02 - Projectos Visual Studio\SolNNet\SolNNet\obj\x86\Release\SolNNet.AboutBox.resources
+D:\Tese\Radon Project\02 - Projectos Visual Studio\SolNNet\SolNNet\bin\Release\SolNNet.exe.config
