@@ -286,7 +286,6 @@ namespace SolNNet
             double c2 = Math.Cos(teta);
             double s2 = Math.Sin(teta);
             List<List<Point>> elipse = new List<List<Point>>();
-            double x1, y1, x2, y2;
             EastingNorthing enzTmp1, enzTmp2;
             EastingNorthing enzTmpDrawCoord1, enzTmpDrawCoord2;
             double plus = 5 * Math.PI / 180;
@@ -499,7 +498,7 @@ namespace SolNNet
         private List<Point> desfasamentoPos(Point pto1, Point pto2, Double delta)
         {
             Double m1 = pto1.X, p1 = pto1.Y, m2 = pto2.X, p2 = pto2.Y;
-            Double rumo = 0, c = 0;
+            Double rumo = 0;
             List<Point> listPts = new List<Point>();
 
             rumo = Math.Atan2(m2 - m1, p2 - p1) > 0 ? Math.Atan2(m2 - m1, p2 - p1) : Math.Atan2(m2 - m1, p2 - p1) + 2 * Math.PI;

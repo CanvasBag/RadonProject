@@ -140,8 +140,7 @@ namespace SolNNet
             double s1 = Math.Sin(teta - Math.PI / 2);
             double c2 = Math.Cos(teta);
             double s2 = Math.Sin(teta);
-            DXFLibrary.Line line;
-            double x1, y1, x2, y2, x, y;
+            double x1, y1, x2, y2;
 
             x1 = esc * (su * c1 * Math.Cos(0.0) + sv * s1 * Math.Sin(0.0)) + x0;
             y1 = esc * (su * c2 * Math.Cos(0.0) + sv * s2 * Math.Sin(0.0)) + y0;
@@ -169,7 +168,7 @@ namespace SolNNet
         {
             
             DXFLibrary.Line line;
-            double x1, y1, x2, y2, x, y;
+            double x2, y2, x, y;
             //Escala elipses
             x = MinE;
             y = minN - MaxSv * esc * 2;

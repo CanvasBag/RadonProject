@@ -260,21 +260,24 @@ namespace SolNNet
 
         private void reportBut_Click(object sender, EventArgs e)
         {
-            SaveFileDialog dialog = new SaveFileDialog();
-            dialog.Filter = "xml files (*.html)|*.html";
-
-            dialog.Title = "Save Report";
-            int numBlunderDir = dataSnoopingBlunderDir(dataSnooping);
-            int numBlunderDist = dataSnoopingBlunderDist(dataSnooping);
-            if (dialog.ShowDialog() == DialogResult.OK)
+            try
             {
+                SaveFileDialog dialog = new SaveFileDialog();
+                dialog.Filter = "xml files (*.html)|*.html";
 
-                HtmlReport export = new HtmlReport(dialog.FileName, ajustamento.NumIterations, ajustamento.VarApriori, ajustamento.VarAposteriori,
-                    testQuiSquareValidated, .05, ajustamento.DegreeOfFreedom, networ2DTmp.NumNormalPts, networ2DTmp.NumControlPts, networ2DTmp.NumFixedPts,
-                    dataSnooping.RejectionLevel, listProcessDist.Count, numBlunderDist, dataSnoopingTestListDist(dataSnooping), listProcessDir.Count,
-                    numBlunderDir, dataSnoopingTestListDir(dataSnooping), "m", " d", 1 / SIUnits.Deg2Rad, " s", 1 / SIUnits.Seg2Rad, pointDisplacements(), processarTrigPts, listProcessDist, listProcessDir);
+                dialog.Title = "Save Report";
+                int numBlunderDir = dataSnoopingBlunderDir(dataSnooping);
+                int numBlunderDist = dataSnoopingBlunderDist(dataSnooping);
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+
+                    HtmlReport export = new HtmlReport(dialog.FileName, ajustamento.NumIterations, ajustamento.VarApriori, ajustamento.VarAposteriori,
+                        testQuiSquareValidated, .05, ajustamento.DegreeOfFreedom, networ2DTmp.NumNormalPts, networ2DTmp.NumControlPts, networ2DTmp.NumFixedPts,
+                        dataSnooping.RejectionLevel, listProcessDist.Count, numBlunderDist, dataSnoopingTestListDist(dataSnooping), listProcessDir.Count,
+                        numBlunderDir, dataSnoopingTestListDir(dataSnooping), "m", " d", 1 / SIUnits.Deg2Rad, " s", 1 / SIUnits.Seg2Rad, pointDisplacements(), processarTrigPts, listProcessDist, listProcessDir);
+                }
             }
-
+            catch { }
         }
 
         private void elipseBut_Click(object sender, EventArgs e)
@@ -392,7 +395,6 @@ namespace SolNNet
             MathNet.Numerics.LinearAlgebra.Matrix localRedundancy = w * qvv;
             MathNet.Numerics.LinearAlgebra.Matrix absVStand = dataSnooping.AbsVStand;
             int i = 0;
-            int j = 0;
             foreach (NetAdjust2D.ReadStationDir rStDirTmp in listProcessDir)
             {
                 rStDirTmp.bias = Math.Sqrt(ajustamento.CovariancesObs[i, i]);
@@ -480,7 +482,6 @@ namespace SolNNet
 
         public void fillCheckBoxs(NetAdjust2D network2DIn)
         {
-            int i = 0;
             clBoxTrigPts.Items.Clear();
             clBoxControlPts.Items.Clear();
             clBoxFixedPts.Items.Clear();
@@ -512,7 +513,6 @@ namespace SolNNet
 
         public void fillCheckBoxsFromResidue(NetAdjust2D network2DIn)
         {
-            int i = 0;
             clBoxTrigPts.Items.Clear();
             clBoxControlPts.Items.Clear();
             clBoxFixedPts.Items.Clear();
@@ -763,8 +763,9 @@ namespace SolNNet
                     drawDisplayPainel_1.draw();
                 }
             }
-            catch (Exception eerror)
+            catch (Exception erro)
             {
+                MessageBox.Show(erro.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
 
@@ -1119,7 +1120,8 @@ namespace SolNNet
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
+            Environment.Exit(0);
         }
     }
 }
