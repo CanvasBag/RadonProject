@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("SolNNet")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("SolNNet is a software dedicated to adjustment of geodetic networks.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Free for academic use.")]
 [assembly: AssemblyProduct("SolNNet")]
 [assembly: AssemblyCopyright("Copyright ©  2011")]
 [assembly: AssemblyTrademark("")]

@@ -46,15 +46,12 @@ namespace SolNNet
             newToolStripMenuItem.Enabled = false;
             openProjectToolStripMenuItem.Enabled = false;
             saveProjectToolStripMenuItem.Enabled = false;
-            sairToolStripMenuItem.Enabled = false;
 
             xMLToolStripMenuItem.Enabled = false;
             hTMLToolStripMenuItem.Enabled = false;
             tXTToolStripMenuItem.Enabled = false;
 
             outputInfoToolStripMenuItem.Enabled = false;
-
-            aboutSolNNetToolStripMenuItem.Enabled = false;
 
         }
 
@@ -1112,6 +1109,17 @@ namespace SolNNet
                 labelX = -100;
                 labelY = -100;
             }
+        }
+
+        private void aboutSolNNetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox box = new AboutBox();
+            box.ShowDialog();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
