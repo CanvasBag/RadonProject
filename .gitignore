@@ -1,5 +1,6 @@
-/SolNNet/SolNNet/bin
-/SolNNet/SolNNet/obj
-/SolNNet/obj
 *~
 *#
+*.exe
+*.dll
+*.pdb
+*.cache
