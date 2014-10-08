@@ -801,7 +801,6 @@
             this.stdvAzTextB.Name = "stdvAzTextB";
             this.stdvAzTextB.Size = new System.Drawing.Size(27, 20);
             this.stdvAzTextB.TabIndex = 4;
-            this.stdvAzTextB.Text = "1";
             this.stdvAzTextB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.stdvAzTextB.MouseHover += new System.EventHandler(this.tabPage3_MouseHover);
             // 
@@ -811,7 +810,6 @@
             this.stdvDirectionsTextB.Name = "stdvDirectionsTextB";
             this.stdvDirectionsTextB.Size = new System.Drawing.Size(27, 20);
             this.stdvDirectionsTextB.TabIndex = 3;
-            this.stdvDirectionsTextB.Text = "1";
             this.stdvDirectionsTextB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.stdvDirectionsTextB.MouseHover += new System.EventHandler(this.tabPage3_MouseHover);
             // 
@@ -841,7 +839,6 @@
             this.bValueTextB.Name = "bValueTextB";
             this.bValueTextB.Size = new System.Drawing.Size(38, 20);
             this.bValueTextB.TabIndex = 2;
-            this.bValueTextB.Text = "1";
             this.bValueTextB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.bValueTextB.MouseHover += new System.EventHandler(this.tabPage3_MouseHover);
             // 
@@ -861,7 +858,6 @@
             this.aValueTextB.Name = "aValueTextB";
             this.aValueTextB.Size = new System.Drawing.Size(38, 20);
             this.aValueTextB.TabIndex = 1;
-            this.aValueTextB.Text = "1.5";
             this.aValueTextB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.aValueTextB.MouseHover += new System.EventHandler(this.tabPage3_MouseHover);
             // 
@@ -918,7 +914,6 @@
             this.displacementScaleTBox.Name = "displacementScaleTBox";
             this.displacementScaleTBox.Size = new System.Drawing.Size(52, 20);
             this.displacementScaleTBox.TabIndex = 6;
-            this.displacementScaleTBox.Text = "1000";
             // 
             // label22
             // 
@@ -935,7 +930,6 @@
             this.ellipseScaleTBox.Name = "ellipseScaleTBox";
             this.ellipseScaleTBox.Size = new System.Drawing.Size(52, 20);
             this.ellipseScaleTBox.TabIndex = 4;
-            this.ellipseScaleTBox.Text = "1000";
             // 
             // label21
             // 
@@ -952,7 +946,6 @@
             this.confidanceElipseTBox.Name = "confidanceElipseTBox";
             this.confidanceElipseTBox.Size = new System.Drawing.Size(52, 20);
             this.confidanceElipseTBox.TabIndex = 2;
-            this.confidanceElipseTBox.Text = "0.95";
             // 
             // label18
             // 

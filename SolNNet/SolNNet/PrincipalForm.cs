@@ -53,6 +53,19 @@ namespace SolNNet
 
             outputInfoToolStripMenuItem.Enabled = false;
 
+
+            // valores por defeito
+            aValueTextB.Text = Convert.ToString(1.5);
+            bValueTextB.Text = Convert.ToString(1);
+
+            stdvDirectionsTextB.Text = Convert.ToString(1);
+            stdvAzTextB.Text = Convert.ToString(1);
+
+            confidanceElipseTBox.Text = Convert.ToString(0.95);
+
+            ellipseScaleTBox.Text = Convert.ToString(1000);
+            displacementScaleTBox.Text = Convert.ToString(1000);
+
         }
 
         #region Buttons
