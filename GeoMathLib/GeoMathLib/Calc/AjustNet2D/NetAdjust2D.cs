@@ -139,7 +139,7 @@ namespace GeoMathLib.Calc.AjustNet2D
             idObservable = 0;
             foreach (XmlNode direction in directions)
             {
-                int iStation = -1;
+                int iStation = -1; // numero associado ah mudanca de estacao
 
                 int unit = 0; //por omissão fica radianos
                 if (direction.Attributes["unit"] != null)
@@ -166,7 +166,7 @@ namespace GeoMathLib.Calc.AjustNet2D
                         if (element.Name == "id")
                         {
                             occupied = GetEastingNorthing(element.InnerText);
-                            iStation++;
+                            iStation++; // muda de estacao
                         }
                         else
                         {
@@ -360,7 +360,7 @@ namespace GeoMathLib.Calc.AjustNet2D
 
             public EastingNorthing occupied;
             public EastingNorthing observed;
-            public int az0;
+            public int az0; // os ReadStationDir que teem o mesmo az0 pertencem ao mesmo estacionamento e por isso tem o mesmo Rumo (azimute) inicial
             public double direction; //radianos
             public int id;
             public override String ToString()

@@ -81,9 +81,17 @@ namespace SolNNet
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 browseXmltextBox.Text = dialog.FileName;
+
+                // passa os dados do XML para NetAjust2D
                 network2D = new NetAdjust2D(browseXmltextBox.Text);
+
+                // mete a tabelas do erros dos ponto de controlo vazia (penso que eh isto)
                 dataGVControlPts.Rows.Clear();
+
+                // preenche as check boxes das observacoes (penso que eh isto)
                 fillCheckBoxs(network2D);
+
+                // desenha a rede (penso que eh isto)
                 drawDisplayPainel_1 = new Drawing(clBoxTrigPts, clBoxControlPts, clBoxFixedPts, clBoxDist, clBoxDir, displayPanel,
                                                   eixoYY1Label, eixoYY2Label, eixoYY3Label, eixoYY4Label, eixoXX1Label, eixoXX2Label, eixoXX3Label,
                                                   escalaElipseLabel, Convert.ToDouble(ellipseScaleTBox.Text));
@@ -107,11 +115,13 @@ namespace SolNNet
         {
             try
             {
+
                 listProcessDist = new List<NetAdjust2D.ReadStationDist>();
                 listProcessDir = new List<NetAdjust2D.ReadStationDir>();
                 processarTrigPts = new GeoCoord();
                 int i = 0, fixedPts = 0, indexDataGridView = 0;
 
+                // pontos da rede
                 foreach (EastingNorthing trigTmp in clBoxTrigPts.CheckedItems)
                 {
                     EastingNorthing trigTmpCopy = trigTmp.Clone();//copia para não alterar os dados originais
@@ -119,6 +129,8 @@ namespace SolNNet
                     trigTmpCopy.ListDadosDivInt[1] = 0;
                     processarTrigPts.EastingNorthingList.Add(trigTmpCopy);
                 }
+
+                // pontos de controlo
                 foreach (EastingNorthing trigTmp in clBoxControlPts.CheckedItems)
                 {
                     EastingNorthing trigTmpCopy = trigTmp.Clone();//copia para não alterar os dados originais
@@ -142,6 +154,8 @@ namespace SolNNet
                     }
                     fixedPts++;
                 }
+
+                // pontos fixos
                 foreach (EastingNorthing trigTmp in clBoxFixedPts.CheckedItems)
                 {
                     EastingNorthing trigTmpCopy = trigTmp.Clone();
@@ -150,6 +164,8 @@ namespace SolNNet
                     processarTrigPts.EastingNorthingList.Add(trigTmpCopy);
                     fixedPts++;
                 }
+
+                // distancias
                 foreach (NetAdjust2D.ReadStationDist readStDist in clBoxDist.CheckedItems)
                 {
                     NetAdjust2D.ReadStationDist readStDistNova = new NetAdjust2D.ReadStationDist();
@@ -160,37 +176,43 @@ namespace SolNNet
                     listProcessDist.Add(readStDistNova);
                 }
 
+                // direcoes
                 List<int> r0sID = new List<int>();
                 foreach (NetAdjust2D.ReadStationDir readStDir in clBoxDir.CheckedItems)
                 {
                     NetAdjust2D.ReadStationDir readStDirNova = new NetAdjust2D.ReadStationDir();
 
-                    int j = 0;
+                    
 
                     //adicionar novo R0 à lista
-                    if (!r0sID.Contains(readStDir.az0))
-                        r0sID.Add(readStDir.az0);
+                    if (!r0sID.Contains(readStDir.az0)) // se nao contem
+                        r0sID.Add(readStDir.az0);       // entao adiciona
+
                     //pesquisar a posicao do R0 na lista de R0s
+                    int j = 0;
                     for (j = 0; j < r0sID.Count; j++)
                     {
                         if (r0sID[j] == readStDir.az0)
-                            break;
+                            break; // "j" fica com a posicao do az0 desta leitura relativamente ah lista r0sID
                     }
 
                     readStDirNova.occupied = replaceTrigInObservations(readStDir.occupied); //substituir as estacoes occupied e observed pelas novas do geocoord processarTrigPts
                     readStDirNova.observed = replaceTrigInObservations(readStDir.observed); //substituir as estacoes occupied e observed pelas novas do geocoord processarTrigPts
 
-                    readStDirNova.az0 = j;
+                    readStDirNova.az0 = j; // o az0 da nova estacao passa a estar relacionado com a lista r0sID
                     readStDirNova.direction = readStDir.direction;
                     readStDirNova.id = readStDir.id;
                     listProcessDir.Add(readStDirNova);
                 }
 
+                // verifica se existe pelo menos 2 pontos fixos
                 if (fixedPts < 2)
                 {
                     MessageBox.Show("Network not fixed!\r\n" + "Fixed + Control points shall at least 2.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;
                 }
+
+                // verifica se os desvios padroes estao definifos nos forms
                 if (Double.Parse(aValueTextB.Text) < 0
                     || Double.Parse(bValueTextB.Text) < 0
                     || Double.Parse(stdvDirectionsTextB.Text) < 0
@@ -199,14 +221,16 @@ namespace SolNNet
                     MessageBox.Show("Observations Stdv not all difined!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;
                 }
+
+                // aloca a estrutura para o ajustamento
                 networ2DTmp = new NetAdjust2D();
-                networ2DTmp.ObsListDist = listProcessDist;
-                networ2DTmp.ObsListDir = listProcessDir;
-                networ2DTmp.TrigPts = processarTrigPts;
+                networ2DTmp.ObsListDist = listProcessDist; // adicioa as distancias
+                networ2DTmp.ObsListDir = listProcessDir;   // adiciona as direcoes
+                networ2DTmp.TrigPts = processarTrigPts;    // adiciona os pontos
                 
                 try
                 {
-
+                    // EXECUTA O AJUSTAMENTO
                     ajustamento = networ2DTmp.ajustNet(Convert.ToDouble(aValueTextB.Text) / 1000, Convert.ToDouble(bValueTextB.Text),
                                                        Convert.ToDouble(stdvDirectionsTextB.Text), Convert.ToDouble(stdvAzTextB.Text));
                     dataSnooping = new DataSnooping(ajustamento.WeightsObs, ajustamento.FstDesignMatrix, ajustamento.CovariancesAjustedParam, ajustamento.Residuals, ajustamento.VarApriori, 2.8);
