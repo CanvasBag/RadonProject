@@ -76,3 +76,22 @@ D:\Lambda Core\Cenas Minhas\Radon Project\02 - VStudio Projects\GeoMathLib\GeoMa
 D:\Lambda Core\Cenas Minhas\Radon Project\02 - VStudio Projects\GeoMathLib\GeoMathLib\bin\Release\fr\MathNet.Iridium.resources.dll
 D:\Lambda Core\Cenas Minhas\Radon Project\02 - VStudio Projects\GeoMathLib\GeoMathLib\obj\Release\GeoMathLib.pdb
 D:\Dropbox\Radon Project\02 - Projectos Visual Studio\GeoMathLib\GeoMathLib\bin\Release\GeoMathLib.XML
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\bin\Release\GeoMathLib.dll
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\bin\Release\GeoMathLib.pdb
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\bin\Release\AjustLeastSquare.dll
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\bin\Release\BaseCoordinates.dll
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\bin\Release\BaseTime.dll
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\bin\Release\MathNet.Iridium.dll
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\bin\Release\AjustLeastSquare.pdb
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\bin\Release\AjustLeastSquare.xml
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\bin\Release\BaseCoordinates.pdb
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\bin\Release\BaseCoordinates.xml
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\bin\Release\BaseTime.pdb
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\bin\Release\BaseTime.xml
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\bin\Release\MathNet.Iridium.pdb
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\bin\Release\de\MathNet.Iridium.resources.dll
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\bin\Release\es\MathNet.Iridium.resources.dll
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\bin\Release\fr\MathNet.Iridium.resources.dll
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\obj\Release\ResolveAssemblyReference.cache
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\obj\Release\GeoMathLib.dll
+C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\GeoMathLib\GeoMathLib\obj\Release\GeoMathLib.pdb

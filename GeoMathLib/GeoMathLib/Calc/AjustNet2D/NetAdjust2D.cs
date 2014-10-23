@@ -434,15 +434,23 @@ namespace GeoMathLib.Calc.AjustNet2D
 
                     if (j1 >= 0)
                     {
-                        dfdM1 = -1 / ((p2 - p1) * (Math.Pow((m2 - m1), 2) / Math.Pow((p2 - p1), 2) + 1));
-                        dfdP1 = (m2 - m1) / (Math.Pow((p2 - p1), 2) * (Math.Pow((m2 - m1), 2) / Math.Pow((p2 - p1), 2) + 1));
+                        //dfdM1 = -1 / ((p2 - p1) * (Math.Pow((m2 - m1), 2) / Math.Pow((p2 - p1), 2) + 1));
+                        //dfdP1 = (m2 - m1) / (Math.Pow((p2 - p1), 2) * (Math.Pow((m2 - m1), 2) / Math.Pow((p2 - p1), 2) + 1));
+
+                        dfdM1 = - (p2 - p1) / ( Math.Pow((m2 - m1), 2) + Math.Pow((p2 - p1), 2) );
+                        dfdP1 = (m2 - m1) / ( Math.Pow((m2 - m1), 2) + Math.Pow((p2 - p1), 2) );
+                        
                         a[i, j1] = dfdM1;
                         a[i, j1 + 1] = dfdP1;
                     }
                     if (j2 >= 0)
                     {
-                        dfdM2 = 1 / ((p2 - p1) * (Math.Pow((m2 - m1), 2) / Math.Pow((p2 - p1), 2) + 1));
-                        dfdP2 = -(m2 - m1) / (Math.Pow((p2 - p1), 2) * (Math.Pow((m2 - m1), 2) / Math.Pow((p2 - p1), 2) + 1));
+                        //dfdM2 = 1 / ((p2 - p1) * (Math.Pow((m2 - m1), 2) / Math.Pow((p2 - p1), 2) + 1));
+                        //dfdP2 = -(m2 - m1) / (Math.Pow((p2 - p1), 2) * (Math.Pow((m2 - m1), 2) / Math.Pow((p2 - p1), 2) + 1));
+
+                        dfdM2 = (p2 - p1) / ( Math.Pow((m2 - m1), 2) + Math.Pow((p2 - p1), 2) );
+                        dfdP2 = -(m2 - m1) / ( Math.Pow((m2 - m1), 2) + Math.Pow((p2 - p1), 2) );
+
                         a[i, j2] = dfdM2;
                         a[i, j2 + 1] = dfdP2;
                     }

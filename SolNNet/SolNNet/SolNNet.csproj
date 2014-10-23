@@ -48,7 +48,7 @@
     </Reference>
     <Reference Include="GeoMathLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\02 - VStudio Projects\GeoMathLib\GeoMathLib\bin\Release\GeoMathLib.dll</HintPath>
+      <HintPath>..\..\GeoMathLib\GeoMathLib\bin\Release\GeoMathLib.dll</HintPath>
     </Reference>
     <Reference Include="MathNet.Iridium, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

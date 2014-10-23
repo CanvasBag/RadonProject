@@ -19,37 +19,6 @@
             <param name="coordRet"></param>
             <Returns></Returns>
         </member>
-        <member name="M:GeoMathLib.Calc.AjustNet2D.HtmlReport.#ctor(System.String,System.Int32,System.Double,System.Double,System.Boolean,System.Double,System.Int32,System.Int32,System.Int32,System.Int32,System.Double,System.Int32,System.Int32,System.Collections.Generic.List{System.Boolean},System.Int32,System.Int32,System.Collections.Generic.List{System.Boolean},System.String,System.String,System.Double,System.String,System.Double,System.Collections.Generic.List{System.Double},BaseCoordinates.Seed.GeoCoord,System.Collections.Generic.List{GeoMathLib.Calc.AjustNet2D.NetAdjust2D.ReadStationDist},System.Collections.Generic.List{GeoMathLib.Calc.AjustNet2D.NetAdjust2D.ReadStationDir})">
-            <summary>
-            Export report do html
-            </summary>
-            <param name="outPutName"></param>
-            <param name="iterations"></param>
-            <param name="varPriori"></param>
-            <param name="varPosteriori"></param>
-            <param name="chiSquareTest"></param>
-            <param name="alpha"></param>
-            <param name="df"></param>
-            <param name="numberOfPoints"></param>
-            <param name="numberOfConstrained"></param>
-            <param name="numberOfFixedPoints"></param>
-            <param name="DataSnoopingRejectionLevel"></param>
-            <param name="numDistances"></param>
-            <param name="numBlunderDistances"></param>
-            <param name="dataSnoopingTestDist"></param>
-            <param name="numDirections"></param>
-            <param name="numBlunderDirections"></param>
-            <param name="dataSnoopingTestDir"></param>
-            <param name="distUnit"></param>
-            <param name="dirUnit"></param>
-            <param name="convertDirUnit"></param>
-            <param name="residuesDirUnit"></param>
-            <param name="convertResDirUnit"></param>
-            <param name="pointsDisplacements"></param>
-            <param name="trigPoints"></param>
-            <param name="listReadDist"></param>
-            <param name="listReadDir"></param>
-        </member>
         <member name="T:GeoMathLib.Calc.TimeConversion">
             <summary>
             (PT) Class de conversão de diferentes tipos de datas
@@ -119,6 +88,116 @@
             </summary>
             <param name="gregorianDate"></param>
             <returns>Copy of JulianDate ID to DateTimer Obj</returns>
+        </member>
+        <member name="T:GeoMathLib.Calc.AjustNet2D.NetAdjust2D">
+            <summary>
+            PT - Classe de Ajustamento de Redes 2D com pontos fixos ou de Constrangimento Mínimo
+            EN - 2D Network ajustment class, using fixed or constrained points         
+            </summary>
+        </member>
+        <member name="M:GeoMathLib.Calc.AjustNet2D.NetAdjust2D.#ctor(System.String)">
+            <summary>
+            PT - Inicializa uma nova instância do NetAdjust2D
+            EN - Initializes a new instance of the NetAdjust2D
+            </summary>
+            <param name="xmlFile">XML path</param>
+        </member>
+        <member name="M:GeoMathLib.Calc.AjustNet2D.NetAdjust2D.#ctor(System.Collections.Generic.List{GeoMathLib.Calc.AjustNet2D.NetAdjust2D.ReadStationDist},System.Collections.Generic.List{GeoMathLib.Calc.AjustNet2D.NetAdjust2D.ReadStationDir},BaseCoordinates.Seed.GeoCoord)">
+            <summary>
+            PT - Inicializa uma nova instância do NetAdjust2D
+            EN - Initializes a new instance of the NetAdjust2D 
+            </summary>
+            <param name="obsListDistIn">List with of Distances</param>
+            <param name="obsListDirIn">List with of Directions</param>
+            <param name="trigPointsIn">List with of Trignometric Points</param>
+        </member>
+        <member name="M:GeoMathLib.Calc.AjustNet2D.NetAdjust2D.ajustNet(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            PT - ajustamento da rede
+            EN - network ajustment
+            </summary>
+            <param name="a">1º Parâmetro da equação de var das distâncias</param>
+            <param name="b">2º Parâmetro da equação de var das distâncias</param>
+            <param name="varDirections">Stdv direcções em segundos</param>
+            <param name="varAzimuth">Stdv Azimutes em segundos</param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoMathLib.Calc.AjustNet2D.NetAdjust2D.MatrixFilIn.defineA(MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix)">
+            <summary>
+            Matriz de Configuração - Matriz x deve já estar definida
+            </summary>
+        </member>
+        <member name="M:GeoMathLib.Calc.AjustNet2D.NetAdjust2D.MatrixFilIn.defineF(MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix)">
+            <summary>
+            Matriz de Fecho
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:GeoMathLib.Projections.TransverseMercator.GaussInversa(BaseCoordinates.Seed.GeoCoord)" -->
+        <member name="M:GeoMathLib.Projections.TransverseMercator.GaussInversa(BaseCoordinates.Elements.EastingNorthing,BaseCoordinates.Geometry.Datum,BaseCoordinates.Geometry.Projection)">
+            <summary>
+            Transversa de Mercator inversa
+            </summary>
+            <param name="coordMPH"></param>
+            <param name="datumIn"></param>
+            <param name="projectionIn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoMathLib.Projections.TransverseMercator.GaussProjection(BaseCoordinates.Seed.GeoCoord,BaseCoordinates.Geometry.Projection)">
+            <summary>
+            Aplica da projecção Transversa de Mercator
+            </summary>
+            <param name="coordLLIn"></param>
+            <param name="projeccaoIn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoMathLib.Projections.TransverseMercator.GaussProjection(BaseCoordinates.Elements.Ll,BaseCoordinates.Geometry.Datum,BaseCoordinates.Geometry.Projection)">
+            <summary>
+            Aplica da projecção Transversa de Mercator
+            </summary>
+            <param name="coordLLIn"></param>
+            <param name="datumIn"></param>
+            <param name="projeccaoIn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoMathLib.Projections.TransverseMercator.arcMeridiano(System.Double,System.Double,BaseCoordinates.Geometry.Elipsoid)">
+            <summary>
+            Calcula o arco de meridiano entre duas latitudes
+            </summary>
+            <param name="lat1">Latitude 1</param>
+            <param name="lat2">Latitude 2</param>
+            <param name="elipsoidIn">Elipsoide de referência</param>
+            <returns>Valor do arco em radianos</returns>
+        </member>
+        <member name="M:GeoMathLib.Calc.AjustNet2D.HtmlReport.#ctor(System.String,System.Int32,System.Double,System.Double,System.Boolean,System.Double,System.Int32,System.Int32,System.Int32,System.Int32,System.Double,System.Int32,System.Int32,System.Collections.Generic.List{System.Boolean},System.Int32,System.Int32,System.Collections.Generic.List{System.Boolean},System.String,System.String,System.Double,System.String,System.Double,System.Collections.Generic.List{System.Double},BaseCoordinates.Seed.GeoCoord,System.Collections.Generic.List{GeoMathLib.Calc.AjustNet2D.NetAdjust2D.ReadStationDist},System.Collections.Generic.List{GeoMathLib.Calc.AjustNet2D.NetAdjust2D.ReadStationDir})">
+            <summary>
+            Export report do html
+            </summary>
+            <param name="outPutName"></param>
+            <param name="iterations"></param>
+            <param name="varPriori"></param>
+            <param name="varPosteriori"></param>
+            <param name="chiSquareTest"></param>
+            <param name="alpha"></param>
+            <param name="df"></param>
+            <param name="numberOfPoints"></param>
+            <param name="numberOfConstrained"></param>
+            <param name="numberOfFixedPoints"></param>
+            <param name="DataSnoopingRejectionLevel"></param>
+            <param name="numDistances"></param>
+            <param name="numBlunderDistances"></param>
+            <param name="dataSnoopingTestDist"></param>
+            <param name="numDirections"></param>
+            <param name="numBlunderDirections"></param>
+            <param name="dataSnoopingTestDir"></param>
+            <param name="distUnit"></param>
+            <param name="dirUnit"></param>
+            <param name="convertDirUnit"></param>
+            <param name="residuesDirUnit"></param>
+            <param name="convertResDirUnit"></param>
+            <param name="pointsDisplacements"></param>
+            <param name="trigPoints"></param>
+            <param name="listReadDist"></param>
+            <param name="listReadDir"></param>
         </member>
         <member name="M:GeoMathLib.Transformations.Helmert.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
             <summary>
@@ -208,85 +287,6 @@
             </summary>
             <param name="dms"></param>
             <returns></returns>
-        </member>
-        <!-- Badly formed XML comment ignored for member "M:GeoMathLib.Projections.TransverseMercator.GaussInversa(BaseCoordinates.Seed.GeoCoord)" -->
-        <member name="M:GeoMathLib.Projections.TransverseMercator.GaussInversa(BaseCoordinates.Elements.EastingNorthing,BaseCoordinates.Geometry.Datum,BaseCoordinates.Geometry.Projection)">
-            <summary>
-            Transversa de Mercator inversa
-            </summary>
-            <param name="coordMPH"></param>
-            <param name="datumIn"></param>
-            <param name="projectionIn"></param>
-            <returns></returns>
-        </member>
-        <member name="M:GeoMathLib.Projections.TransverseMercator.GaussProjection(BaseCoordinates.Seed.GeoCoord,BaseCoordinates.Geometry.Projection)">
-            <summary>
-            Aplica da projecção Transversa de Mercator
-            </summary>
-            <param name="coordLLIn"></param>
-            <param name="projeccaoIn"></param>
-            <returns></returns>
-        </member>
-        <member name="M:GeoMathLib.Projections.TransverseMercator.GaussProjection(BaseCoordinates.Elements.Ll,BaseCoordinates.Geometry.Datum,BaseCoordinates.Geometry.Projection)">
-            <summary>
-            Aplica da projecção Transversa de Mercator
-            </summary>
-            <param name="coordLLIn"></param>
-            <param name="datumIn"></param>
-            <param name="projeccaoIn"></param>
-            <returns></returns>
-        </member>
-        <member name="M:GeoMathLib.Projections.TransverseMercator.arcMeridiano(System.Double,System.Double,BaseCoordinates.Geometry.Elipsoid)">
-            <summary>
-            Calcula o arco de meridiano entre duas latitudes
-            </summary>
-            <param name="lat1">Latitude 1</param>
-            <param name="lat2">Latitude 2</param>
-            <param name="elipsoidIn">Elipsoide de referência</param>
-            <returns>Valor do arco em radianos</returns>
-        </member>
-        <member name="T:GeoMathLib.Calc.AjustNet2D.NetAdjust2D">
-            <summary>
-            PT - Classe de Ajustamento de Redes 2D com pontos fixos ou de Constrangimento Mínimo
-            EN - 2D Network ajustment class, using fixed or constrained points         
-            </summary>
-        </member>
-        <member name="M:GeoMathLib.Calc.AjustNet2D.NetAdjust2D.#ctor(System.String)">
-            <summary>
-            PT - Inicializa uma nova instância do NetAdjust2D
-            EN - Initializes a new instance of the NetAdjust2D
-            </summary>
-            <param name="xmlFile">XML path</param>
-        </member>
-        <member name="M:GeoMathLib.Calc.AjustNet2D.NetAdjust2D.#ctor(System.Collections.Generic.List{GeoMathLib.Calc.AjustNet2D.NetAdjust2D.ReadStationDist},System.Collections.Generic.List{GeoMathLib.Calc.AjustNet2D.NetAdjust2D.ReadStationDir},BaseCoordinates.Seed.GeoCoord)">
-            <summary>
-            PT - Inicializa uma nova instância do NetAdjust2D
-            EN - Initializes a new instance of the NetAdjust2D 
-            </summary>
-            <param name="obsListDistIn">List with of Distances</param>
-            <param name="obsListDirIn">List with of Directions</param>
-            <param name="trigPointsIn">List with of Trignometric Points</param>
-        </member>
-        <member name="M:GeoMathLib.Calc.AjustNet2D.NetAdjust2D.ajustNet(System.Double,System.Double,System.Double,System.Double)">
-            <summary>
-            PT - ajustamento da rede
-            EN - network ajustment
-            </summary>
-            <param name="a">1º Parâmetro da equação de var das distâncias</param>
-            <param name="b">2º Parâmetro da equação de var das distâncias</param>
-            <param name="varDirections">Stdv direcções em segundos</param>
-            <param name="varAzimuth">Stdv Azimutes em segundos</param>
-            <returns></returns>
-        </member>
-        <member name="M:GeoMathLib.Calc.AjustNet2D.NetAdjust2D.MatrixFilIn.defineA(MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix)">
-            <summary>
-            Matriz de Configuração - Matriz x deve já estar definida
-            </summary>
-        </member>
-        <member name="M:GeoMathLib.Calc.AjustNet2D.NetAdjust2D.MatrixFilIn.defineF(MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix)">
-            <summary>
-            Matriz de Fecho
-            </summary>
         </member>
     </members>
 </doc>
