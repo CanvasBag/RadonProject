@@ -125,3 +125,4 @@ C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\SolNNet\Sol
 C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\SolNNet\SolNNet\obj\x86\Release\GenerateResource.read.1.tlog
 C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\SolNNet\SolNNet\obj\x86\Release\GenerateResource.write.1.tlog
 C:\Users\vasconde\Documents\Visual Studio 2010\Projects\RadonProject\SolNNet\SolNNet\bin\Release\GeoMathLib.dll
+C:\Documents and Settings\vconde\Desktop\devel\RadonProject\SolNNet\SolNNet\bin\Release\GeoMathLib.dll

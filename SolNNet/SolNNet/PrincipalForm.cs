@@ -482,7 +482,7 @@ namespace SolNNet
             int numBlunder = 0;
             for (int i = 0; i < listProcessDir.Count; i++)
             {
-                numBlunder += dataSnooping.VStandTest[i] ? 1 : 0;
+                numBlunder += dataSnooping.VStandTest[i] ? 0 : 1;
             }
             return numBlunder;
         }
@@ -492,7 +492,7 @@ namespace SolNNet
             int numBlunder = 0;
             for (int i = listProcessDir.Count; i < listProcessDist.Count + listProcessDir.Count; i++)
             {
-                numBlunder += dataSnooping.VStandTest[i] ? 1 : 0;
+                numBlunder += dataSnooping.VStandTest[i] ? 0 : 1;
             }
             return numBlunder;
         }
