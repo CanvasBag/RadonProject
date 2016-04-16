@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Your Title</title>
+	
+	<style type="text/css" media="screen">
+		html, body 		{ margin: 0; padding: 0; }
+		body 			{ color: #333; font: 12px Helvetica, Arial, sans-serif; line-height: 18px; }
+		h2				{ color: #333; }
+		a				{ color: #337810; }
+		p				{ margin: 0 0 18px; }
+		#container		{ width: 910px; margin: 0 auto;}
+		#wrapper		{ float: left; width: 100%; }
+		
+		/* Header */
+		#header			{ background: #eee; border-bottom: 2px solid #ddd; }
+		#header h1  	{ color: #004b6f; margin: 0 0 3px; padding: 24px 18px 0; }
+		#header p		{ color: #666; font-size: 11px; font-weight: bold; padding: 0 18px; }
+		
+		/* Content Style */
+		#middleImg 		{ margin: 15px; padding: 5px; float: center; text-align: center;}
+		#navigation		{ border-bottom: 1px solid #ccc; }
+		#navigation ul	{ padding: 0 18px 9px; }
+		#extra			{ border-bottom: 1px solid #ccc; }
+		#extra small	{ font-size: 11px; line-height: 18px; }		
+		#content 		{ border-bottom: 1px solid #ccc; }
+		#content p, #extra p { padding-right: 18px; }
+		
+		/* Content Positioning and Size */
+		#navigation		{ float: left; margin-left: -200px; width: 175px; }
+		#content		{ text-align: justify; margin: 0 215px 36px 225px; }		
+		#content2		{ text-align: justify; font-size: 80%; margin: 0 215px 36px 225px; }
+		#extra			{ float: left; margin-left: -892px; width: 175px; }		/* Footer */
+		#footer			{ background: #333; border-bottom: 2px solid #999; clear: left; width: 100%; }
+		#footer a		{ color: #eee; }
+		#footer	p		{ color: #ccc; margin: 0; padding: 0 18px 10px; }
+		#footer ul		{ border-bottom: 1px solid #555; list-style: none; margin: 0 18px 6px; padding: 10px 0 6px; }
+		#footer li		{ display: inline; font-size: 11px; font-weight: bold; padding-right: 5px; }
+	</style>
+	<!--[if IE]>
+	<style type="text/css">
+	    #navigation, #content, #extra { margin-top: 20px; }
+	</style>
+	<![endif]-->
+</head><body>
+	<div id="container">
+		<div id="header">
+			<h1><font face="Georgia">SolNNet</font></h1>
+			<p class="description">Conversão de formatos</p>
+		</div>
+		<div id="wrapper">
+			<div id="content">
+				<h3>Conversão de Formatos</h3>
+				<p>O SolNNet está organizado para ler ficheiros tipo xml de entrada de dados, com uma arquitectura específica, e como 
+				tal, é necessário converter quaisquer tipos de outros formatos para o formato do SolNNet.</p>
+				<h4>A partir de TXT</h4>
+				<p>Os dados de entrada estarão divididos em 3 ficheiros txt: pontos trigonométricos<sup><font color="red">1</font></sup>, direcções<sup><font color="red">2</font></sup> e 
+				distâncias<sup><font color="red">3</font></sup>. Dentro de cada ficheiro, cada linha terá uma coordenada ou observação, e o separador dos valores poderá ser 
+				qualquer um desde que seja sempre igual.</p>
+				<p>Indicar as unidades das distâncias em <i>Metric Units</i><sup><font color="red">4</font></sup>, das direcções em <i>Angular Units</i><sup><font color="red">5</font></sup>, o caracter 
+				separador de colunas em <i>Column Separator</i><sup><font color="red">6</font></sup> e por fim o destino do ficheiro xml<sup><font color="red">7</font></sup>.</p>
+				<div id="middleImg">
+					 <img src="Images/DataConvertFormats.jpg" alt="Data Convert Formats" width="80%">
+				</div>			
+			</div>
+		</div>
+		<div id="navigation">
+			<h2>Tutorial Nav</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="workflow.html">Workflow</li>				
+				<li><a href="dataConvertFormats.html">Conversão de Formatos</a></li>
+				<li><a href="definicao_de_rede.html">Definiçao da rede</a></li>
+				<li><a href="processamento.html">Análise de processamento</a></li>
+				<li><a href="exports.html">Exportar dados</a></li>
+				<li><a href="downloads.html">Downloads</a></li>
+			</ul>
+		</div>
+		<div id="extra">
+			<h2>Formato dos ficheiros</h2>
+			<h3>TrigPoints</h3>
+			<table width="70%">
+  				   <tr>
+  				      <td><b>ID</b></td>
+					  <td><b>M</b></td>
+					  <td><b>P</b></td>
+ 				   </tr>
+ 				   <tr>
+   				      <td>1</td>
+  					  <td>5.142</td>
+					  <td>-1.024</td>
+ 				   </tr>
+				   <tr>
+				   	  <td>2</td>
+  					  <td>1.574</td>
+					  <td>7.321</td>
+				   </tr>
+				   <tr>
+				   	  <td>3  </td>
+  					  <td>15.015</td>
+					  <td>2.845</td>
+				   </tr>
+	        </table>			
+			<h3>Direcções</h3>
+			<p>Radianos<br> Graus<br>DMS<br> Gradianos</p>
+			<table width="100%">
+  				   <tr>
+  				      <td><b>ID1</b></td>
+					  <td><b>ID2</b></td>
+					  <td><b>Ângulo</b></td>
+ 				   </tr>
+ 				   <tr>
+   				      <td>1  </td>
+  					  <td>2</td>
+					  <td>0.836247<i> (Rad)</td>
+ 				   </tr>
+				   <tr>
+				   	  <td>1</td>
+  					  <td>2</td>
+					  <td>47.91345 <i>(Graus)</td>
+				   </tr>
+				   <tr>
+				   	  <td>1  </td>
+  					  <td>2</td>
+					  <td>47 &nbsp54 &nbsp48.42 <i>(DMS)</td>
+				   </tr>
+				   <tr>
+				   	  <td>1  </td>
+  					  <td>2</td>
+					  <td>53.23716 <i>(Grad)</td>
+				   </tr>
+	        </table>			
+			<h3>Distâncias</h3>
+			<table width="80%">
+  				   <tr>
+  				      <td><b>ID1</b></td>
+					  <td><b>ID2</b></td>
+					  <td><b>Distância</b></td>
+ 				   </tr>
+ 				   <tr>
+   				      <td>1  </td>
+  					  <td>2</td>
+					  <td>34.456</td>
+ 				   </tr>
+				   <tr>
+				   	  <td>1</td>
+  					  <td>2</td>
+					  <td>15.012</td>
+				   </tr>
+	        </table>			
+		</div>
+		<div id="footer">
+			<p>SolNNet. Copyright 2014, Pedro Mendonça and Vasco Conde, Free for academic use.</p>
+		</div>
+	</div>
+</body>
+</html>

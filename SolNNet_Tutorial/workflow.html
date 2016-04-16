@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Your Title</title>
+	
+	<style type="text/css" media="screen">
+		html, body 		{ margin: 0; padding: 0; }
+		body 			{ color: #333; font: 12px Helvetica, Arial, sans-serif; line-height: 18px; }
+		h2				{ color: #333; }
+		a				{ color: #337810; }
+		p				{ margin: 0 0 18px; }
+		#container		{ width: 910px; margin: 0 auto;}
+		#wrapper		{ float: left; width: 100%; }
+		
+		/* Header */
+		#header			{ background: #eee; border-bottom: 2px solid #ddd; }
+		#header h1  	{ color: #004b6f; margin: 0 0 3px; padding: 24px 18px 0; }
+		#header p		{ color: #666; font-size: 11px; font-weight: bold; padding: 0 18px; }
+		
+		/* Content Style */
+		#middleImg 		{ margin: 15px; padding: 5px; float: center; text-align: center;}
+		#navigation		{ border-bottom: 1px solid #ccc; }
+		#navigation ul	{ padding: 0 18px 9px; }
+		#extra			{ border-bottom: 1px solid #ccc; }
+		#content 		{ border-bottom: 1px solid #ccc; }
+		#extra small	{ font-size: 11px; line-height: 18px; }
+		#content p, #extra p { padding-right: 18px; }
+		
+		/* Content Positioning and Size */
+		#navigation		{ float: left; margin-left: -200px; width: 175px; }
+		#content		{ text-align: justify; margin: 0 215px 36px 225px; }
+		#extra			{ text-align: justify; float: left; margin-left: -892px; width: 175px; }		/* Footer */
+		#footer			{ background: #333; border-bottom: 2px solid #999; clear: left; width: 100%; }
+		#footer a		{ color: #eee; }
+		#footer	p		{ color: #ccc; margin: 0; padding: 0 18px 10px; }
+		#footer ul		{ border-bottom: 1px solid #555; list-style: none; margin: 0 18px 6px; padding: 10px 0 6px; }
+		#footer li		{ display: inline; font-size: 11px; font-weight: bold; padding-right: 5px; }
+	</style>
+	<!--[if IE]>
+	<style type="text/css">
+	    #navigation, #content, #extra { margin-top: 20px; }
+	</style>
+	<![endif]-->
+</head><body>
+	<div id="container">
+		<div id="header">
+			<h1><font face="Georgia">SolNNet</font></h1>
+			<p class="description">Ajustamento de redes 2D</p>
+		</div>
+		<div id="wrapper">
+			<div id="content">				
+				<h3>Workflow</h3>
+				<h4>Conversão de Formatos</h4>
+				<p>A primeira fase do processamento é a fase de normalização dos dados de entrada no SolNNet, foi programado uma
+				ferramenta que converte os dados de ficheiros TXT para uma arquitectura XML que o software consegue interpretar. </p>
+				<h4>Definição da rede</h4>
+				<p>Importada a campanha alvo, segue-se a definição da rede onde interactivamente poder-se-á seleccionar que vértices
+				são considerados de Pontos Fixos ou de Controlo assim como os que serão dados como pontos trigonométricos. Do mesmo
+				modo seleccionam-se as observações que vão entrar no processamento e por fim definem-se os devios padrão de cada elemento:
+				observações e pontos de controlo.</p>
+				<h4>Análise</h4>
+				<p>Efectuado o processamento com a rede pré-definida, é possível analisar os seguintes dados:
+ 				<ul>
+     			    <li>Coordenadas ajustadas dos pontos trigonométricos;</li>
+     			    <li>Deslocamentos relativamente às coordenadas de entrada;</li>
+    			    <li>Observações ajustadas;</li>
+   				    <li>Resíduos das observações;</li>
+                    <li>Resíduos normalizados das observações;</li>
+					<li>Teste estatístico data snooping sobre os resíduos normalizados;</li>
+                    <li>Teste estatístico bilateral da Razão de variâncias;</li>
+                    <li>Graus de Liberdade;</li>
+                    <li>Média dos resíduos.</li>
+ 				</ul> 
+				É conveniente eliminar observações que não passem o teste estatístico data snooping, assim como aceitar o
+				processamento como válido, até o teste da razão das variâncias assim o demostrar.
+				</p>
+				<h4>Exportações</h4>
+				<p>
+				Finalizado o processamento, poder-se-á exportar os resultados. Os dados numéricos, através da exportação de 
+				um relatório no formato HTML, assim como a geometria da rede: vértices, observações, elipses e deslocamentos; no formato
+				DXF.   
+				<div id="middleImg">
+					 <!--<img src="Images/Workflow.png" alt="WorkFlow" width="350">-->
+					 <img name="Workflow" src="Images/Workflow.png" width="356" height="654" border="0" id="Workflow" usemap="#m_Workflow" alt="" /><map name="m_Workflow" id="m_Workflow">
+                   	 <area shape="rect" coords="145,17,242,42" href="dataConvertFormats.html" alt="" />
+					 <area shape="rect" coords="230,109,335,124" href="definicao_de_rede.html" alt="" />
+					 <area shape="rect" coords="28,315,121,336" href="processamento.html" alt="" />
+					 <area shape="rect" coords="120,590,155,625" href="exports.html"" alt="" />
+				</div>
+				<p></p>
+			</div>
+		</div>
+		<div id="navigation">
+			<h2>Tutorial Nav</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="workflow.html">Workflow</li>				
+				<li><a href="dataConvertFormats.html">Conversão de Formatos</a></li>
+				<li><a href="definicao_de_rede.html">Definiçao da rede</a></li>
+				<li><a href="processamento.html">Análise de processamento</a></li>
+				<li><a href="exports.html">Exportar dados</a></li>
+				<li><a href="downloads.html">Downloads</a></li>
+			</ul>
+		</div>
+		<div id="extra">
+			<h3>Pontos Trigonométricos</h3>
+			<p>Os vértices de coordenadas desconhecidas da rede, são aqui chamados de pontos trigonométricos, ou pts trig, pelo facto 
+			da sua posição, coordenadas M P, ser calculada através de métodos trigonométricos. </p>
+			<h3>Pontos Fixos</h3>
+			<p>Pontos fixos no SolNNet são os vértices da rede que fazem parte da definição do datum, as suas coordenadas são consideradas
+			conhecidas, sem qualquer incerteza associada.</p>
+			<h3>Pontos de Controlo</h3>
+			<p>Pontos de controlo são também vértices da rede considerados fixos, mas que as suas coordenadas têm uma variância associada.
+			</p>
+		</div>
+		<div id="footer">
+			<p>SolNNet. Copyright 2014, Pedro Mendonça and Vasco Conde, Free for academic use.</p>
+		</div>
+	</div>
+</body>
+</html>

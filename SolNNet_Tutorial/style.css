@@ -1,0 +1,16 @@
+body {
+	width: 800px;
+	margin: 50px auto;
+}
+img {
+	width: 100%;
+}
+figure {
+	cursor: pointer;
+}
+figure img {
+	-webkit-transition: all .5s;
+}
+figure:hover img {
+	-webkit-transform: scale(1.5);
+}

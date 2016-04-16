@@ -8,11 +8,11 @@ using BaseCoordinates.Seed;
 using MathNet.Numerics.LinearAlgebra;
 using AjustLeastSquare;
 
-namespace nivela2console
+namespace GeoMathLib.Calc
 {
     
 
-    public class Ajustment
+    public class Nivela
     {
         private List<ReadStation> obsList = new List<ReadStation>();
         private int nObs;
@@ -29,9 +29,9 @@ namespace nivela2console
 
         private Matrix adjustedPoints;
         private Matrix residuals;
-         
 
-        public Ajustment()
+
+        public Nivela()
         {
             obsList.Add(new ReadStation("X", "A", 5.10, 4.0));
             obsList.Add(new ReadStation("A", "Y", 2.34, 3.0));

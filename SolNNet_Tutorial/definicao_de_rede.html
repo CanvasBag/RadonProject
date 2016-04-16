@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Your Title</title>
+	<script src='jquery-1.8.3.min.js'></script> <!-- Para o inner zoom  -->
+	<script src='jquery.elevatezoom.js'></script> <!-- Para o inner zoom  -->
+	<style type="text/css" media="screen">
+		html, body 		{ margin: 0; padding: 0; }
+		body 			{ color: #333; font: 12px Helvetica, Arial, sans-serif; line-height: 18px; }
+		h2				{ color: #333; }
+		a				{ color: #337810; }
+		p				{ margin: 0 0 18px; }
+		#container		{ width: 910px; margin: 0 auto;}
+		#wrapper		{ float: left; width: 100%; }
+		
+		/* Header */
+		#header			{ background: #eee; border-bottom: 2px solid #ddd; }
+		#header h1  	{ color: #004b6f; margin: 0 0 3px; padding: 24px 18px 0; }
+		#header p		{ color: #666; font-size: 11px; font-weight: bold; padding: 0 18px; }
+		
+		/* Content Style */
+		#middleImg 		{ margin: 15px; padding: 5px; float: center; text-align: center;}
+		#leftImg 		{ margin: 15px; padding: 5px; float: center; text-align: center;}
+		/*#middleImg img	{ cursor: crosshair; -webkit-transition: all .5s;} /* Para o zoom popup*/
+		/*#middleImg img:hover { -webkit-transform: scale(1.9);} /* Para o zoom popup*/
+		#leftImg img	{ cursor: crosshair; -webkit-transition: all .5s;} /* Para o zoom popup*/
+		#leftImg img:hover { -webkit-transform: scale(1.9);} /* Para o zoom popup*/
+		#navigation		{ border-bottom: 1px solid #ccc; }
+		#navigation ul	{ padding: 0 18px 9px; }
+		#extra			{ border-bottom: 1px solid #ccc; }
+		#content 		{ border-bottom: 1px solid #ccc; }
+		#extra small	{ font-size: 11px; line-height: 18px; }
+		#content p, #extra p { padding-right: 18px; }
+		
+		/* Content Positioning and Size */
+		#navigation		{ float: left; margin-left: -200px; width: 175px; }
+		#content		{ text-align: justify; margin: 0 215px 36px 225px; }
+		#extra			{ text-align: justify; float: left; margin-left: -892px; width: 175px; }		/* Footer */
+		#footer			{ background: #333; border-bottom: 2px solid #999; clear: left; width: 100%; }
+		#footer a		{ color: #eee; }
+		#footer	p		{ color: #ccc; margin: 0; padding: 0 18px 10px; }
+		#footer ul		{ border-bottom: 1px solid #555; list-style: none; margin: 0 18px 6px; padding: 10px 0 6px; }
+		#footer li		{ display: inline; font-size: 11px; font-weight: bold; padding-right: 5px; }
+	</style>
+	<!--[if IE]>
+	<style type="text/css">
+	    #navigation, #content, #extra { margin-top: 20px; }
+	</style>
+	<![endif]-->
+</head><body>
+	<div id="container">
+		<div id="header">
+			<h1><font face="Georgia">SolNNet</font></h1>
+			<p class="description">Ajustamento de redes 2D</p>
+		</div>
+		<div id="wrapper">
+			<div id="content">
+				<h3>Definição da Rede</h3>
+				A rede, vértices, pontos de controlo e observações a utilizar, é definida na zona "Data" do SolNNet. Na zona de
+				"Display" poder-se-á visualizar interactivamente a definição da rede.
+				
+				<h4>Network</h4>
+				Na secção <i>Network</i> definem-se quais os vértices que são pontos trigonométricos, pontos de controlo ou pontos
+				fixos.
+				
+				<div id="middleImg">
+					 <!--<img src="Images/SolNNet.png" alt="SolNNet" width="80%">-->
+					 <img src="Images/network.png" width="70%"/><br>
+					 <small>O botão <i>Select</i>, selecciona ou desselecciona todos os items da lista.</small>
+				</div>
+				
+				<h4>Observations</h4>
+				Na secção <i>Observations</i> definem-se quais as observações: direcções, distâncias e azimutes; que entram no processamento da rede.
+				<div id="middleImg">
+					 <!--<img src="Images/SolNNet.png" alt="SolNNet" width="80%">-->
+					 <img src="Images/observations.png" width="70%"/><br>
+					 <small>A caixa de selecção, individualmente, serve para indicar se o seu tipo de observação 
+					 aparece desenhado na janela do Display.</small>
+				</div> 
+				<h4>Others</h4>
+				A definição do desvio padrão das observações e dos pontos de controlo faz-se na secção <i>Others</i>.
+				<br>Para as distâncias utiliza-se a equação em baixo, em que <b>a</b> é a componente constante de incerteza em milímetros (mm), <b>b</b> é o 
+				coeficiente, partes por milhão (ppm), da componente variável distância observada <b>s</b>.
+				<div id="middleImg">
+					 <!--<img src="Images/SolNNet.png" alt="SolNNet" width="80%">-->
+					 <img src="Images/distStdvEquation.png" width="25%"/><br>
+				</div>
+				Nas direcções a unidade do valor de desvio padrão é o segundo (") de grau.<br>
+				Nos pontos de controlo a unidade é o milímetro (mm).
+				
+				<div id="middleImg">
+					 <img src="Images/others.png" width="45%"/><br>
+					 <small></small>
+				</div>
+				
+				<h4>Options</h4>
+				<ul type="circle">
+                <li>Sincronização instantânea entre a selecção dos pontos e das observações e a janela de Display da rede.</li>
+                <li>valor de região de confiança, na escala de 0 a 1, de definição das elipses de confiança.</li>
+                <li>escala das elipses <b>1 : x</b>, onde <b>1</b> será a escala do gráfico da rede e <b>x</b> a das elipses.</li>
+				<li>escala dos deslocamentos <b>1 : x</b>, onde <b>1</b> será a escala do gráfico da rede e <b>x</b> a dos deslocamentos.</li>
+                </ul> 
+				<div id="middleImg">
+					 <img src="Images/options.png" width="35%"/><br>
+					 <small></small>
+				</div>
+				<h4>Display</h4>
+				Janela de visualização da arquitectura da rede.<p></p>
+				<table border="0" WIDTH="480">
+				<tr>
+    				
+    				<td rowspan="11" WIDTH="280" >					 
+					 <img src="Images/display.png" width="280px" ALIGN="center"/><br>					 
+					 </td>
+					 <td><font size="1"><font color="red">&nbsp1.</font> Ajuste da tela à rede (<i>fit screen</i>)</font></td>
+  				</tr>
+				<tr>
+					<td><font size="1"><font color="red">&nbsp2.</font> Zoom In</font></td>
+				</tr>
+				<tr>
+					<td><font size="1"><font color="red">&nbsp3.</font> Zoom Out</font></td>
+				</tr>
+				<tr>
+					<td><font size="1"><font color="red">&nbsp4.</font> Legenda (nome dos pontos)</font></td>
+				</tr>
+				<tr>
+					<td><font size="1"><font color="red">&nbsp5.</font> Grelha de coordenadas: <br>&nbsp&nbsp&nbsp 0 - <i>Off</i>; 1 - <i>On</i>; 2 - Mais densa</font></td>
+				</tr>
+				<tr>
+					<td><font size="1"><font color="red">&nbsp6.</font> Elipes:<br>&nbsp&nbsp&nbsp 0 - de erro; 1 - de confiânça; 2 - <i>Off</i></font></td>
+				</tr>
+				<tr>
+					<td><font size="1"><font color="red">&nbsp7.</font> Vectores de deslocamentos</font></td>
+				</tr>
+				<tr>
+					<td><font size="1"><font color="red">&nbsp8.</font> Escala das elipses</font></td>
+				</tr>
+				<tr>
+					<td><font size="1"><font color="red">&nbsp9.</font> Ponto Trigonométrico</font></td>
+				</tr>
+				<tr>
+					<td><font size="1"><font color="red">10.</font> Ponto Fixo</font></td>
+				</tr>
+				<tr>
+					<td><font size="1"><font color="red">11.</font> Ponto de Controlo</font></td>
+				</tr>
+				</table>
+				
+				<p></p>				
+			</div>
+		</div>
+		<div id="navigation">
+			<h2>Tutorial Nav</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="workflow.html">Workflow</a></li>				
+				<li><a href="dataConvertFormats.html">Conversão de Formatos</a></li>
+				<li><a href="definicao_de_rede.html">Definição da rede</a></li>
+				<li><a href="processamento.html">Análise de processamento</a></li>
+				<li><a href="exports.html">Exportar dados</a></li>
+				<li><a href="downloads.html">Downloads</a></li>
+			</ul>
+		</div>
+		<div id="extra">
+			<h3>Distâncias</h3>
+			As distâncias inseridas na rede de processamento do SolNNet, devem ser distâncias horizontais.
+			<p></p>
+			<div id="leftImg">
+				 <!--<img src="Images/distanciaH.png" width="135" alt="distância horizontal" title="" border="0" />-->
+				 <img src="Images/distanciaH.png" alt="distância horizontal" width="80%">
+		    </div>	
+			<h3>Direcções</h3>		
+			As direcções deverão corresponder aos ângulos entre o vértice visado e o R<sub>0</sub> do limbo. Este deve manter-se inalterado para cada estacionamento.	
+			<p></p>
+		</div>
+		<div id="footer">
+			<p>SolNNet. Copyright 2014, Pedro MendonÃ§a and Vasco Conde, Free for academic use.</p>
+		</div>
+	</div>
+	<script> <!-- Para o inner zoom  -->
+    $('#zoom_01').elevateZoom({
+    zoomType: "inner",
+	cursor: "crosshair",
+	zoomWindowFadeIn: 300,
+	zoomWindowFadeOut: 450
+   	}); 
+	</script>
+</body>
+</html>
