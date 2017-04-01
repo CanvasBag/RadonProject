@@ -19,51 +19,51 @@ namespace AjustLeastSquare
         private Matrix n, nInv, v, qxx, x, lAjs, qxxAjs;
 
         /// <summary>
-        /// Construtor com a Matriz de Pesos ou Matriz de variancias e covariancias das observações
+        /// PT - Construtor com a Matriz de Pesos das observações
+        /// EN - Constructor with Wheight Observation Matrix
         /// </summary>
-        /// <param name="nParamIn">número de parametros</param>
-        /// <param name="nObsIn">número de observações</param>
-        /// <param name="lIn">Matriz (vector) das observações</param>
-        /// <param name="aIn">Matriz de configuração</param>
-        /// <param name="wIn">Matriz dos pesos das observações</param>
-        /// <param name="qllIn">Matriz de VeC das observações</param>
-        /// <param name="varIn">Variancia de referencia a priori</param>
-        public LinearParametric(int nParamIn, int nObsIn, Matrix lIn, Matrix aIn, Matrix wIn, Matrix qllIn, double varIn)
+        /// <param name="nParamIn">number of unknown parameters</param>
+        /// <param name="nObsIn">number of observations</param>
+        /// <param name="lIn">Observation Matrix (Vector)</param>
+        /// <param name="aIn">1st Configuration Matrix</param>
+        /// <param name="wIn">Observation Wheight Matrix</param>
+        /// <param name="varIn">A Priori Reference Variance</param>
+        public LinearParametric(int nParamIn, int nObsIn, Matrix lIn, Matrix aIn, Matrix wIn, double varIn)
         {
             nParam = nParamIn;
             nObs = nObsIn;
             l = lIn;
             a = aIn;
             w = wIn;
-            qll = qllIn;
             var = varIn;
             if (w != null)
                 GenerateCovarianceObs();
-            else if (qllIn != null)
+            else
+                throw new MissingFieldException("Wheight obs matrix not defined.");
+        }
+
+        /// <summary>
+        /// PT - Construtor com a Matriz Variancias e Covariancias das observações
+        /// EN - Constructor with Variance Observation Matrix
+        /// </summary>
+        /// <param name="nParamIn">number of unknown parameters</param>
+        /// <param name="nObsIn">number of observations</param>
+        /// <param name="lIn">Observation Matrix (Vector)</param>
+        /// <param name="aIn">1st Configuration Matrix</param>
+        /// <param name="qllIn">Observations Var Matrix</param>
+        /// <param name="varIn">A Priori Reference Variance</param>
+        public LinearParametric(int nParamIn, int nObsIn, Matrix lIn, Matrix aIn, Matrix qllIn, double varIn)
+        {
+            nParam = nParamIn;
+            nObs = nObsIn;
+            l = lIn;
+            a = aIn;
+            qll = qllIn;
+            var = varIn;
+            if (qllIn != null)
                 GenerateWeights();
             else
-                throw new MissingFieldException("Matriz de var e co-var ou matriz de pesos das obs não definida");
-        }
-
-
-        /// <summary>
-        /// Gera a matriz de pesos a partir da matriz de variancias e covariancias
-        /// </summary>
-        public void GenerateWeights()
-        {
-            //Pl = Cl.Inverse();            
-            w = qll.InvDiagMatrix();
-            w = var * w;
-        }
-
-        /// <summary>
-        /// Gera a matriz de variancias e covariancias a partir da matriz de pesos
-        /// </summary>
-        public void GenerateCovarianceObs()
-        {
-            //qll -> Covariance matrix of the observations            
-            qll = w.InvDiagMatrix();
-            qll = var * qll;
+                throw new MissingFieldException("Var matrix not defined.");
         }
 
         /// <summary>
@@ -113,8 +113,34 @@ namespace AjustLeastSquare
 
         }
 
+        #region metodos auxiliares
+
         /// <summary>
-        /// (EN) define and return the number of parameters
+        /// Gera a matriz de pesos a partir da matriz de variancias e covariancias
+        /// </summary>
+        private void GenerateWeights()
+        {
+            //Pl = Cl.Inverse();            
+            w = qll.InvDiagMatrix();
+            w = var * w;
+        }
+
+        /// <summary>
+        /// Gera a matriz de variancias e covariancias a partir da matriz de pesos
+        /// </summary>
+        private void GenerateCovarianceObs()
+        {
+            //qll -> Covariance matrix of the observations            
+            qll = w.InvDiagMatrix();
+            qll = var * qll;
+        }
+
+        #endregion 
+
+        #region sets and gets
+
+        /// <summary>
+        /// (EN) get and set the number of parameters
         /// (PT) define e retorna o número de parametros
         /// </summary>
         public int NParameters
@@ -130,7 +156,7 @@ namespace AjustLeastSquare
         }
 
         /// <summary>
-        /// (EN) define and return the number of observations
+        /// (EN) get and set the number of observations
         /// (PT) define e retorna o número de observações
         /// </summary>
         public int NObservations
@@ -146,7 +172,7 @@ namespace AjustLeastSquare
         }
 
         /// <summary>
-        /// (EN) define and return the matrix (vector) of observations
+        /// (EN) get and set the matrix (vector) of observations
         /// (PT) define e retorna a matriz (vetor) de observações
         /// </summary>
         public Matrix Observations
@@ -162,7 +188,7 @@ namespace AjustLeastSquare
         }
 
         /// <summary>
-        /// (EN) define and return the covariance matrix of the observations
+        /// (EN) get and set the covariance matrix of the observations
         /// (PT) define e retorna a Matriz de variancias e covariancias das observações
         /// </summary>
         public Matrix CovariancesObs
@@ -178,7 +204,7 @@ namespace AjustLeastSquare
         }
 
         /// <summary>
-        /// (EN) define and return the weight matrix
+        /// (EN) get and set the weight matrix
         /// (PT) define e retorna a Matriz de pesos das observações
         /// </summary>
         public Matrix WeightsObs
@@ -194,7 +220,7 @@ namespace AjustLeastSquare
         }
 
         /// <summary>
-        ///(EN) define and return the design matrix
+        ///(EN) get and set the design matrix
         ///(PT) define e retorna a Matriz de configuração
         /// </summary>
         public Matrix DesignMatrix
@@ -210,7 +236,7 @@ namespace AjustLeastSquare
         }
 
         /// <summary>
-        /// (EN) define and return the normal matrix
+        /// (EN) get and set the normal matrix
         /// (PT) define e retorna a Matriz Normal
         /// </summary>
         public Matrix NormalMatrix
@@ -226,7 +252,7 @@ namespace AjustLeastSquare
         }
 
         /// <summary>
-        /// (EN) define and return the inverse of normal matrix
+        /// (EN) get and set the inverse of normal matrix
         /// (PT) define e retorna a inversa da Matriz Normal
         /// </summary>
         public Matrix InvNormalMatrix
@@ -242,7 +268,7 @@ namespace AjustLeastSquare
         }
 
         /// <summary>
-        /// (EN) define and return the a priori variance factor
+        /// (EN) get and set the a priori variance factor
         /// (PT) define e retorna a variancia a priori
         /// </summary>
         public double VarApriori
@@ -258,7 +284,7 @@ namespace AjustLeastSquare
         }
 
         /// <summary>
-        /// (EN) define and return a posteriori variance factor [vanicek, 1982]
+        /// (EN) get and set a posteriori variance factor [vanicek, 1982]
         /// (PT) define e retorna a variancia aposteriori
         /// </summary>
         public double VarAposteriori
@@ -274,7 +300,7 @@ namespace AjustLeastSquare
         }
 
         /// <summary>
-        /// (EN) define and return the residuals
+        /// (EN) get and set the residuals
         /// (PT) define e retorna a Matriz (vector) dos residuos
         /// </summary>
         public Matrix Residuals
@@ -290,7 +316,7 @@ namespace AjustLeastSquare
         }
 
         /// <summary>
-        /// (EN) define and return adjusted parameters
+        /// (EN) get and set adjusted parameters
         /// (PT) define e retorna a "Matriz" dos parametros ajustados
         /// </summary>
         public Matrix AjustedParam
@@ -306,7 +332,7 @@ namespace AjustLeastSquare
         }
 
         /// <summary>
-        /// (EN) define and return the covariance matrix of the adjusted parameters 
+        /// (EN) get and set the covariance matrix of the adjusted parameters 
         /// (PT) define e retorna a Matriz das variancias e covariancias dos parametros ajustados
         /// </summary>
         public Matrix CovariancesAjustedParam
@@ -322,7 +348,7 @@ namespace AjustLeastSquare
         }
 
         /// <summary>
-        /// (EN) define and return adjusted observations
+        /// (EN) get and set adjusted observations
         /// (PT) define e retorna a Matriz (vector) das observações ajustadas
         /// </summary>
         public Matrix AjustedObs
@@ -353,5 +379,6 @@ namespace AjustLeastSquare
             }
         }
 
+        #endregion
     }
 }

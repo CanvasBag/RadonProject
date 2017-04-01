@@ -27,3 +27,12 @@ D:\Dropbox\Radon Project\02 - Projectos Visual Studio\baseCoordinates\baseCoordi
 D:\Dropbox\Radon Project\02 - Projectos Visual Studio\baseCoordinates\baseCoordinates\obj\Debug\BaseCoordinates.dll
 D:\Dropbox\Radon Project\02 - Projectos Visual Studio\baseCoordinates\baseCoordinates\obj\Debug\BaseCoordinates.pdb
 D:\Dropbox\Radon Project\02 - Projectos Visual Studio\baseCoordinates\baseCoordinates\bin\Debug\BaseCoordinates.xml
+D:\GitHub\RadonProject\baseCoordinates\baseCoordinates\bin\Debug\BaseCoordinates.xml
+D:\GitHub\RadonProject\baseCoordinates\baseCoordinates\bin\Debug\BaseCoordinates.dll
+D:\GitHub\RadonProject\baseCoordinates\baseCoordinates\bin\Debug\BaseCoordinates.pdb
+D:\GitHub\RadonProject\baseCoordinates\baseCoordinates\bin\Debug\BaseTime.dll
+D:\GitHub\RadonProject\baseCoordinates\baseCoordinates\bin\Debug\BaseTime.pdb
+D:\GitHub\RadonProject\baseCoordinates\baseCoordinates\bin\Debug\BaseTime.xml
+D:\GitHub\RadonProject\baseCoordinates\baseCoordinates\obj\Debug\BaseCoordinates.dll
+D:\GitHub\RadonProject\baseCoordinates\baseCoordinates\obj\Debug\BaseCoordinates.pdb
+D:\GitHub\RadonProject\baseCoordinates\baseCoordinates\obj\Debug\BaseCoordinates.csprojResolveAssemblyReference.cache

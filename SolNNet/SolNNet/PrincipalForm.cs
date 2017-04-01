@@ -165,7 +165,7 @@ namespace SolNNet
                     fixedPts++;
                 }
 
-                // distancias
+                // distâncias
                 foreach (NetAdjust2D.ReadStationDist readStDist in clBoxDist.CheckedItems)
                 {
                     NetAdjust2D.ReadStationDist readStDistNova = new NetAdjust2D.ReadStationDist();

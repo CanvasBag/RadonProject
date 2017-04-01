@@ -41,3 +41,17 @@ D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinS
 D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Release\BaseCoordinates.dll
 D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Release\BaseCoordinates.pdb
 D:\Dropbox\Radon Project\02 - Projectos Visual Studio\AjustLeastSquare\ajustMinSquare\bin\Release\BaseCoordinates.xml
+D:\GitHub\RadonProject\AjustLeastSquare\ajustMinSquare\bin\Release\AjustLeastSquare.XML
+D:\GitHub\RadonProject\AjustLeastSquare\ajustMinSquare\bin\Release\AjustLeastSquare.dll
+D:\GitHub\RadonProject\AjustLeastSquare\ajustMinSquare\bin\Release\AjustLeastSquare.pdb
+D:\GitHub\RadonProject\AjustLeastSquare\ajustMinSquare\bin\Release\BaseCoordinates.dll
+D:\GitHub\RadonProject\AjustLeastSquare\ajustMinSquare\bin\Release\MathNet.Iridium.dll
+D:\GitHub\RadonProject\AjustLeastSquare\ajustMinSquare\bin\Release\BaseCoordinates.pdb
+D:\GitHub\RadonProject\AjustLeastSquare\ajustMinSquare\bin\Release\BaseCoordinates.xml
+D:\GitHub\RadonProject\AjustLeastSquare\ajustMinSquare\bin\Release\MathNet.Iridium.pdb
+D:\GitHub\RadonProject\AjustLeastSquare\ajustMinSquare\bin\Release\de\MathNet.Iridium.resources.dll
+D:\GitHub\RadonProject\AjustLeastSquare\ajustMinSquare\bin\Release\es\MathNet.Iridium.resources.dll
+D:\GitHub\RadonProject\AjustLeastSquare\ajustMinSquare\bin\Release\fr\MathNet.Iridium.resources.dll
+D:\GitHub\RadonProject\AjustLeastSquare\ajustMinSquare\obj\Release\AjustLeastSquare.csprojResolveAssemblyReference.cache
+D:\GitHub\RadonProject\AjustLeastSquare\ajustMinSquare\obj\Release\AjustLeastSquare.dll
+D:\GitHub\RadonProject\AjustLeastSquare\ajustMinSquare\obj\Release\AjustLeastSquare.pdb

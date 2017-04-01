@@ -10,3 +10,9 @@ D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\bin\Release\BaseTi
 D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\obj\Release\ResolveAssemblyReference.cache
 D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\obj\Release\BaseTime.dll
 D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\obj\Release\BaseTime.pdb
+D:\GitHub\RadonProject\BaseTime\baseTime\bin\Release\BaseTime.XML
+D:\GitHub\RadonProject\BaseTime\baseTime\bin\Release\BaseTime.dll
+D:\GitHub\RadonProject\BaseTime\baseTime\bin\Release\BaseTime.pdb
+D:\GitHub\RadonProject\BaseTime\baseTime\obj\Release\BaseTime.csprojResolveAssemblyReference.cache
+D:\GitHub\RadonProject\BaseTime\baseTime\obj\Release\BaseTime.dll
+D:\GitHub\RadonProject\BaseTime\baseTime\obj\Release\BaseTime.pdb

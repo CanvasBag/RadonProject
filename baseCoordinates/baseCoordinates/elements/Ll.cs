@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using baseTime.Seed;
+using baseTime.Elements;
 
 namespace BaseCoordinates.Elements
 {
@@ -19,6 +21,7 @@ namespace BaseCoordinates.Elements
         private List<Double> dadosDivD;
         private List<Int32> dadosDivInt;
         private String id;
+        private DateTime tempo;
 
         /// <summary>
         /// cria um objecto ll
@@ -97,6 +100,15 @@ namespace BaseCoordinates.Elements
         {
             get { return h; }
             set { h = value; }
+        }
+
+        /// <summary>
+        /// define e retorna o valor o tempo
+        /// </summary>
+        public DateTime time
+        {
+            get { return tempo; }
+            set { tempo = value; }
         }
 
         /// <summary>

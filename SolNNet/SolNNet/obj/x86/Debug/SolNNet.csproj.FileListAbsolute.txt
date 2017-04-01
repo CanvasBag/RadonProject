@@ -70,3 +70,6 @@ D:\Tese\Radon Project\02 - Projectos Visual Studio\SolNNet\SolNNet\obj\x86\Debug
 D:\Tese\Radon Project\02 - Projectos Visual Studio\SolNNet\SolNNet\obj\x86\Debug\SolNNet.Properties.Resources.resources
 D:\Tese\Radon Project\02 - Projectos Visual Studio\SolNNet\SolNNet\obj\x86\Debug\SolNNet.csproj.GenerateResource.Cache
 D:\Tese\Radon Project\02 - Projectos Visual Studio\SolNNet\SolNNet\bin\Debug\SolNNet.exe.config
+D:\GitHub\RadonProject\SolNNet\SolNNet\bin\Debug\SolNNet.exe.config
+D:\GitHub\RadonProject\SolNNet\SolNNet\obj\x86\Debug\SolNNet.exe
+D:\GitHub\RadonProject\SolNNet\SolNNet\obj\x86\Debug\SolNNet.pdb

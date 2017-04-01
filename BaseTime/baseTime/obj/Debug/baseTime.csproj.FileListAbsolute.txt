@@ -15,3 +15,8 @@ D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\obj\Debug\ResolveA
 D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\obj\Debug\BaseTime.dll
 D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\obj\Debug\BaseTime.pdb
 D:\Lambda Core\OnRail\02 - VStudio Projects\BaseTime\baseTime\bin\Debug\BaseTime.XML
+D:\GitHub\RadonProject\BaseTime\baseTime\bin\Debug\BaseTime.XML
+D:\GitHub\RadonProject\BaseTime\baseTime\bin\Debug\BaseTime.dll
+D:\GitHub\RadonProject\BaseTime\baseTime\bin\Debug\BaseTime.pdb
+D:\GitHub\RadonProject\BaseTime\baseTime\obj\Debug\BaseTime.dll
+D:\GitHub\RadonProject\BaseTime\baseTime\obj\Debug\BaseTime.pdb

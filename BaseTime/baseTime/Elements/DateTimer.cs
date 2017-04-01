@@ -13,7 +13,7 @@ namespace baseTime.Elements
         public DateTimer(DateTime timer_, String id_)
         {
             timer = timer_;
-            id = id_;
+            id = id_;   
         }
 
         public DateTimer(DateTime timer_)

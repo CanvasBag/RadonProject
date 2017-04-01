@@ -4,124 +4,6 @@
         <name>AjustLeastSquare</name>
     </assembly>
     <members>
-        <member name="M:AjustLeastSquare.LinearParametric.#ctor(System.Int32,System.Int32,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,System.Double)">
-            <summary>
-            Construtor com a Matriz de Pesos ou Matriz de variancias e covariancias das observações
-            </summary>
-            <param name="nParamIn">número de parametros</param>
-            <param name="nObsIn">número de observações</param>
-            <param name="lIn">Matriz (vector) das observações</param>
-            <param name="aIn">Matriz de configuração</param>
-            <param name="wIn">Matriz dos pesos das observações</param>
-            <param name="qllIn">Matriz de VeC das observações</param>
-            <param name="varIn">Variancia de referencia a priori</param>
-        </member>
-        <member name="M:AjustLeastSquare.LinearParametric.GenerateWeights">
-            <summary>
-            Gera a matriz de pesos a partir da matriz de variancias e covariancias
-            </summary>
-        </member>
-        <member name="M:AjustLeastSquare.LinearParametric.GenerateCovarianceObs">
-            <summary>
-            Gera a matriz de variancias e covariancias a partir da matriz de pesos
-            </summary>
-        </member>
-        <member name="M:AjustLeastSquare.LinearParametric.Compute">
-            <summary>
-            (EN) Implementation of the adjustment.
-            (PT) Calculo do ajustamento.
-            </summary>
-        </member>
-        <member name="P:AjustLeastSquare.LinearParametric.NParameters">
-            <summary>
-            (EN) define and return the number of parameters
-            (PT) define e retorna o número de parametros
-            </summary>
-        </member>
-        <member name="P:AjustLeastSquare.LinearParametric.NObservations">
-            <summary>
-            (EN) define and return the number of observations
-            (PT) define e retorna o número de observações
-            </summary>
-        </member>
-        <member name="P:AjustLeastSquare.LinearParametric.Observations">
-            <summary>
-            (EN) define and return the matrix (vector) of observations
-            (PT) define e retorna a matriz (vetor) de observações
-            </summary>
-        </member>
-        <member name="P:AjustLeastSquare.LinearParametric.CovariancesObs">
-            <summary>
-            (EN) define and return the covariance matrix of the observations
-            (PT) define e retorna a Matriz de variancias e covariancias das observações
-            </summary>
-        </member>
-        <member name="P:AjustLeastSquare.LinearParametric.WeightsObs">
-            <summary>
-            (EN) define and return the weight matrix
-            (PT) define e retorna a Matriz de pesos das observações
-            </summary>
-        </member>
-        <member name="P:AjustLeastSquare.LinearParametric.DesignMatrix">
-             <summary>
-            (EN) define and return the design matrix
-            (PT) define e retorna a Matriz de configuração
-             </summary>
-        </member>
-        <member name="P:AjustLeastSquare.LinearParametric.NormalMatrix">
-            <summary>
-            (EN) define and return the normal matrix
-            (PT) define e retorna a Matriz Normal
-            </summary>
-        </member>
-        <member name="P:AjustLeastSquare.LinearParametric.InvNormalMatrix">
-            <summary>
-            (EN) define and return the inverse of normal matrix
-            (PT) define e retorna a inversa da Matriz Normal
-            </summary>
-        </member>
-        <member name="P:AjustLeastSquare.LinearParametric.VarApriori">
-            <summary>
-            (EN) define and return the a priori variance factor
-            (PT) define e retorna a variancia a priori
-            </summary>
-        </member>
-        <member name="P:AjustLeastSquare.LinearParametric.VarAposteriori">
-            <summary>
-            (EN) define and return a posteriori variance factor [vanicek, 1982]
-            (PT) define e retorna a variancia aposteriori
-            </summary>
-        </member>
-        <member name="P:AjustLeastSquare.LinearParametric.Residuals">
-            <summary>
-            (EN) define and return the residuals
-            (PT) define e retorna a Matriz (vector) dos residuos
-            </summary>
-        </member>
-        <member name="P:AjustLeastSquare.LinearParametric.AjustedParam">
-            <summary>
-            (EN) define and return adjusted parameters
-            (PT) define e retorna a "Matriz" dos parametros ajustados
-            </summary>
-        </member>
-        <member name="P:AjustLeastSquare.LinearParametric.CovariancesAjustedParam">
-            <summary>
-            (EN) define and return the covariance matrix of the adjusted parameters 
-            (PT) define e retorna a Matriz das variancias e covariancias dos parametros ajustados
-            </summary>
-        </member>
-        <member name="P:AjustLeastSquare.LinearParametric.AjustedObs">
-            <summary>
-            (EN) define and return adjusted observations
-            (PT) define e retorna a Matriz (vector) das observações ajustadas
-            </summary>
-        </member>
-        <member name="P:AjustLeastSquare.LinearParametric.AjustedCovariancesAjustedParam">
-            <summary>
-            (EN) return and define the adjusted covariance matrix of the adjusted parameters 
-            (PT) retorna a "Matriz" ajustada das variâncias e co-variâncias dos parametros ajustados
-            </summary>
-        </member>
         <member name="M:AjustLeastSquare.Combined.#ctor(System.Int32,System.Int32,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,System.Double)">
             <summary>
             Construtor com a Matriz de Pesos ou Matriz de variancias e covariancias das observações
@@ -291,6 +173,135 @@
             <param name="var"></param>
             <param name="df"></param>
             <param name="alpha"></param>
+        </member>
+        <member name="M:AjustLeastSquare.Statistics.DataSnooping.#ctor(MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,System.Double,System.Double)">
+            <summary>
+            PT - Teste DataSnooping - Efectua o cálculo do teste Data Snooping dos resíduos de um ajustamento por mínimos quadrados
+            </summary>
+            <param name="w">Weight matrix</param>
+            <param name="a">Jacobian Matrix - partial derivates to parameters</param>
+            <param name="qxx">Var and covar matrix of ajusted parameters</param>
+            <param name="v">Residuals matrix</param>
+            <param name="var">Variance value of the adjustment, a posteriori</param>
+            <param name="rejectionLevel">Level rejection of the test</param>
+        </member>
+        <member name="M:AjustLeastSquare.LinearParametric.#ctor(System.Int32,System.Int32,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,System.Double)">
+            <summary>
+            Construtor com a Matriz de Pesos ou Matriz de variancias e covariancias das observações
+            </summary>
+            <param name="nParamIn">número de parametros</param>
+            <param name="nObsIn">número de observações</param>
+            <param name="lIn">Matriz (vector) das observações</param>
+            <param name="aIn">Matriz de configuração</param>
+            <param name="wIn">Matriz dos pesos das observações</param>
+            <param name="qllIn">Matriz de VeC das observações</param>
+            <param name="varIn">Variancia de referencia a priori</param>
+        </member>
+        <member name="M:AjustLeastSquare.LinearParametric.GenerateWeights">
+            <summary>
+            Gera a matriz de pesos a partir da matriz de variancias e covariancias
+            </summary>
+        </member>
+        <member name="M:AjustLeastSquare.LinearParametric.GenerateCovarianceObs">
+            <summary>
+            Gera a matriz de variancias e covariancias a partir da matriz de pesos
+            </summary>
+        </member>
+        <member name="M:AjustLeastSquare.LinearParametric.Compute">
+            <summary>
+            (EN) Implementation of the adjustment.
+            (PT) Calculo do ajustamento.
+            </summary>
+        </member>
+        <member name="P:AjustLeastSquare.LinearParametric.NParameters">
+            <summary>
+            (EN) define and return the number of parameters
+            (PT) define e retorna o número de parametros
+            </summary>
+        </member>
+        <member name="P:AjustLeastSquare.LinearParametric.NObservations">
+            <summary>
+            (EN) define and return the number of observations
+            (PT) define e retorna o número de observações
+            </summary>
+        </member>
+        <member name="P:AjustLeastSquare.LinearParametric.Observations">
+            <summary>
+            (EN) define and return the matrix (vector) of observations
+            (PT) define e retorna a matriz (vetor) de observações
+            </summary>
+        </member>
+        <member name="P:AjustLeastSquare.LinearParametric.CovariancesObs">
+            <summary>
+            (EN) define and return the covariance matrix of the observations
+            (PT) define e retorna a Matriz de variancias e covariancias das observações
+            </summary>
+        </member>
+        <member name="P:AjustLeastSquare.LinearParametric.WeightsObs">
+            <summary>
+            (EN) define and return the weight matrix
+            (PT) define e retorna a Matriz de pesos das observações
+            </summary>
+        </member>
+        <member name="P:AjustLeastSquare.LinearParametric.DesignMatrix">
+             <summary>
+            (EN) define and return the design matrix
+            (PT) define e retorna a Matriz de configuração
+             </summary>
+        </member>
+        <member name="P:AjustLeastSquare.LinearParametric.NormalMatrix">
+            <summary>
+            (EN) define and return the normal matrix
+            (PT) define e retorna a Matriz Normal
+            </summary>
+        </member>
+        <member name="P:AjustLeastSquare.LinearParametric.InvNormalMatrix">
+            <summary>
+            (EN) define and return the inverse of normal matrix
+            (PT) define e retorna a inversa da Matriz Normal
+            </summary>
+        </member>
+        <member name="P:AjustLeastSquare.LinearParametric.VarApriori">
+            <summary>
+            (EN) define and return the a priori variance factor
+            (PT) define e retorna a variancia a priori
+            </summary>
+        </member>
+        <member name="P:AjustLeastSquare.LinearParametric.VarAposteriori">
+            <summary>
+            (EN) define and return a posteriori variance factor [vanicek, 1982]
+            (PT) define e retorna a variancia aposteriori
+            </summary>
+        </member>
+        <member name="P:AjustLeastSquare.LinearParametric.Residuals">
+            <summary>
+            (EN) define and return the residuals
+            (PT) define e retorna a Matriz (vector) dos residuos
+            </summary>
+        </member>
+        <member name="P:AjustLeastSquare.LinearParametric.AjustedParam">
+            <summary>
+            (EN) define and return adjusted parameters
+            (PT) define e retorna a "Matriz" dos parametros ajustados
+            </summary>
+        </member>
+        <member name="P:AjustLeastSquare.LinearParametric.CovariancesAjustedParam">
+            <summary>
+            (EN) define and return the covariance matrix of the adjusted parameters 
+            (PT) define e retorna a Matriz das variancias e covariancias dos parametros ajustados
+            </summary>
+        </member>
+        <member name="P:AjustLeastSquare.LinearParametric.AjustedObs">
+            <summary>
+            (EN) define and return adjusted observations
+            (PT) define e retorna a Matriz (vector) das observações ajustadas
+            </summary>
+        </member>
+        <member name="P:AjustLeastSquare.LinearParametric.AjustedCovariancesAjustedParam">
+            <summary>
+            (EN) return and define the adjusted covariance matrix of the adjusted parameters 
+            (PT) retorna a "Matriz" ajustada das variâncias e co-variâncias dos parametros ajustados
+            </summary>
         </member>
         <member name="M:AjustLeastSquare.NonLinearParametric.#ctor(System.Int32,System.Int32,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,MathNet.Numerics.LinearAlgebra.Matrix,System.Double)">
             <summary>

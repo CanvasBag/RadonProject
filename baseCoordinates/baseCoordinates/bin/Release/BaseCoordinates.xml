@@ -4,6 +4,143 @@
         <name>BaseCoordinates</name>
     </assembly>
     <members>
+        <member name="M:BaseCoordinates.Elements.Height.addDados(System.Double)">
+            <summary>
+            Adiciona um valor à lista de Doubles de dados diversos
+            </summary>
+        </member>
+        <member name="M:BaseCoordinates.Elements.Height.addDados(System.String)">
+            <summary>
+            Adiciona um valor à lista de Strings de dados diversos
+            </summary>
+        </member>
+        <member name="M:BaseCoordinates.Elements.Height.CompareTo(BaseCoordinates.Elements.Height)">
+            <summary>
+            compara o id com outro objecto Height
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Height.ID">
+            <summary>
+            define e retorna o valor de ID
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Height.H">
+            <summary>
+            define e retorna o valor da coordenada H
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Height.time">
+            <summary>
+            define e retorna o valor o tempo
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Height.SigmaH">
+            <summary>
+            define e retorna o valor de sigma de H
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Height.Vel_H">
+            <summary>
+            define e retorna o valor de velocidade da componente H
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Height.Sigma_Vel_H">
+            <summary>
+            define e retorna o valor de sigma da velocidade da componente H
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Height.Acel_H">
+            <summary>
+            define e retorna o valor da aceleração da componente H
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Height.Sigma_Acel_H">
+            <summary>
+            define e retorna o valor de sigma da aceleração da componente H
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Height.ListDadosDivS">
+            <summary>
+            define e retorna a lista de dados diversos em formato string
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Height.ListDadosDivInt">
+            <summary>
+            define e retorna a lista de dados diversos em formato string
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Height.ListDadosDivD">
+            <summary>
+            define e retorna a lista de dados diversos em formato double
+            </summary>
+        </member>
+        <member name="T:BaseCoordinates.Elements.CompareHeight">
+            <summary>
+            comparar Objecto Height pela componente Height
+            </summary>
+        </member>
+        <member name="T:BaseCoordinates.Geometry.Datum">
+            <summary>
+            Classe datum que contém as componentes:
+            Desvio da vertical (E/N)
+            Ondulação do geóide na origem
+            Latitude Origem
+            Longitude Origem
+            Diferença de Az astronómico com geodésico 
+            Elipsoide de Ref (objecto Elipsoid)
+            </summary>
+        </member>
+        <member name="M:BaseCoordinates.Geometry.Datum.#ctor(BaseCoordinates.Geometry.Elipsoid,System.Double,System.Double)">
+            <summary>
+            define um objecto Datum
+            </summary>
+            <param name="elipsoidIn"></param>
+            <param name="longOrigem"></param>
+            <param name="latOrigem"></param>
+        </member>
+        <member name="M:BaseCoordinates.Geometry.Datum.#ctor(BaseCoordinates.Geometry.Elipsoid)">
+            <summary>
+            define um objecto Datum
+            </summary>
+            <param name="elipsoidIn"></param>
+        </member>
+        <member name="P:BaseCoordinates.Geometry.Datum.NZero">
+            <summary>
+            define e retorna o valor da ondulação do geóide na origem
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Geometry.Datum.LongOrigem">
+            <summary>
+            define e retorna o valor da longitude na origem
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Geometry.Datum.LatOrigem">
+            <summary>
+            define e retorna o valor da latitude na origem
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Geometry.Datum.DesvVert_N">
+            <summary>
+            define e retorna o valor do desvio da vertical na origem na componente Norte
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Geometry.Datum.DesvVert_E">
+            <summary>
+            define e retorna o valor do desvio da vertical na origem na componente Este
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Geometry.Datum.Delta_Az">
+            <summary>
+            define e retorna o valor da diferença entre o Az Astronómico com o Az Geodésico
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Geometry.Datum.Elipsoid">
+            <summary>
+            define e retorna o elipsoide 
+            </summary>
+        </member>
         <member name="T:BaseCoordinates.Geometry.Elipsoid">
             <summary>
             Definição do elipsoide
@@ -419,6 +556,11 @@
             define e retorna o valor do Id do Objecto
             </summary>
         </member>
+        <member name="P:BaseCoordinates.Elements.Ret.time">
+            <summary>
+            define e retorna o valor o tempo
+            </summary>
+        </member>
         <member name="P:BaseCoordinates.Elements.Ret.SigmaX">
             <summary>
             define e retorna o valor de signa da componente X
@@ -522,6 +664,222 @@
         <member name="T:BaseCoordinates.Elements.CompareZ">
             <summary>
             comparar Objectos Ret pela componente Z
+            </summary>
+        </member>
+        <member name="M:BaseCoordinates.Elements.Ll.#ctor(System.Double,System.Double,System.Double,System.String)">
+            <summary>
+            cria um objecto ll
+            </summary>
+            <param name="log_"></param>
+            <param name="lat_"></param>
+            <param name="h_"></param>
+        </member>
+        <member name="M:BaseCoordinates.Elements.Ll.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            cria um objecto ll
+            </summary>
+            <param name="log_"></param>
+            <param name="lat_"></param>
+            <param name="h_"></param>
+        </member>
+        <member name="M:BaseCoordinates.Elements.Ll.#ctor">
+            <summary>
+            cria um objecto ll
+            </summary>
+        </member>
+        <member name="M:BaseCoordinates.Elements.Ll.addDados(System.Double)">
+            <summary>
+            Adiciona um valor à lista de Doubles de dados diversos
+            </summary>
+        </member>
+        <member name="M:BaseCoordinates.Elements.Ll.addDados(System.String)">
+            <summary>
+            Adiciona um valor à lista de Strings de dados diversos
+            </summary>
+        </member>
+        <member name="M:BaseCoordinates.Elements.Ll.setLatLongH(System.Double,System.Double,System.Double)">
+            <summary>
+            define o valor das componentes Longitude, Latitude e h respectivamente
+            </summary>
+            <param name="log_"></param>
+            <param name="lat_"></param>
+            <param name="h_"></param>
+        </member>
+        <member name="M:BaseCoordinates.Elements.Ll.setSigmaLatLongH(System.Double,System.Double,System.Double)">
+            <summary>
+            define o valor de sigma das componentes  Longitude, Latitude e h respectivamente
+            </summary>
+            <param name="siglog"></param>
+            <param name="siglat"></param>
+            <param name="sigh"></param>
+        </member>
+        <member name="M:BaseCoordinates.Elements.Ll.setVel_LatLongH(System.Double,System.Double,System.Double)">
+            <summary>
+            define o valor das velocidadades das componentes Longitude, Latitude e h respectivamente
+            </summary>
+            <param name="vellog"></param>
+            <param name="vellat"></param>
+            <param name="velh"></param>
+        </member>
+        <member name="M:BaseCoordinates.Elements.Ll.setSigmaVel_LatLongH(System.Double,System.Double,System.Double)">
+            <summary>
+            define o valor de sigma das velocidadades das componentes Longitude, Latitude e h respectivamente
+            </summary>
+            <param name="sigVellog"></param>
+            <param name="sigVellat"></param>
+            <param name="sigVelh"></param>
+        </member>
+        <member name="M:BaseCoordinates.Elements.Ll.setAcel_LatLongH(System.Double,System.Double,System.Double)">
+            <summary>
+            define o valor das aceleraçõess das componentes Longitude, Latitude e h respectivamente
+            </summary>
+            <param name="acellog"></param>
+            <param name="acellat"></param>
+            <param name="acelh"></param>
+        </member>
+        <member name="M:BaseCoordinates.Elements.Ll.setSigmaAcel_LatLongH(System.Double,System.Double,System.Double)">
+            <summary>
+            define o valor de sigma das acelerações das componentes Longitude, Latitude e h respectivamente
+            </summary>
+            <param name="sigAcellog"></param>
+            <param name="sigAcellat"></param>
+            <param name="sigAcelh"></param>
+        </member>
+        <member name="M:BaseCoordinates.Elements.Ll.CompareTo(BaseCoordinates.Elements.Ll)">
+            <summary>
+            compara o id com outro objecto Ll
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.ID">
+            <summary>
+            define e retorna o valor de ID
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.Lat">
+            <summary>
+            define e retorna o valor de Latitude
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.Long">
+            <summary>
+            define e retorna o valor de Longitude
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.H">
+            <summary>
+            define e retorna o valor de Altitude
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.time">
+            <summary>
+            define e retorna o valor o tempo
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.SigmaLat">
+            <summary>
+            define e retorna o valor de sigma da Latitude
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.SigmaLong">
+            <summary>
+            define e retorna o valor de sigma da Longitude
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.SigmaH">
+            <summary>
+            define e retorna o valor de sigma da Longitude
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.Vel_Lat">
+            <summary>
+            define e retorna o valor da velocidade da componente Latitude
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.Vel_Log">
+            <summary>
+            define e retorna o valor da velocidade da componente Longitude
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.Vel_H">
+            <summary>
+            define e retorna o valor da velocidade da componente H
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.Sigma_Vel_Lat">
+            <summary>
+            define e retorna o valor de sigma da velocidade da componente Latitude
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.Sigma_Vel_Long">
+            <summary>
+            define e retorna o valor de sigma da velocidade da componente Longitude
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.Sigma_Vel_H">
+            <summary>
+            define e retorna o valor de sigma da velocidade da componente H
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.Acel_Lat">
+            <summary>
+            define e retorna o valor da aceleração da componente Latitude
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.Acel_Long">
+            <summary>
+            define e retorna o valor da aceleração da componente Longitude
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.Acel_H">
+            <summary>
+            define e retorna o valor da aceleração da componente H
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.Sigma_Acel_Lat">
+            <summary>
+            define e retorna o valor de sigma da aceleração da componente Latitude
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.Sigma_Acel_Long">
+            <summary>
+            define e retorna o valor de sigma da aceleração da componente Longitude
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.Sigma_Acel_H">
+            <summary>
+            define e retorna o valor de sigma da aceleração da componente H
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.ListDadosDivS">
+            <summary>
+            define e retorna a lista de dados diversos em formato string
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.ListDadosDivInt">
+            <summary>
+            define e retorna a lista de dados diversos em formato string
+            </summary>
+        </member>
+        <member name="P:BaseCoordinates.Elements.Ll.ListDadosDivD">
+            <summary>
+            define e retorna a lista de dados diversos em formato double
+            </summary>
+        </member>
+        <member name="T:BaseCoordinates.Elements.CompareLat">
+            <summary>
+            comparar Objectos Ll pela componente Latitude
+            </summary>
+        </member>
+        <member name="T:BaseCoordinates.Elements.CompareLog">
+            <summary>
+            comparar Objectos Ll pela componente Longitude
+            </summary>
+        </member>
+        <member name="T:BaseCoordinates.Elements.Compareh">
+            <summary>
+            comparar Objectos Ll pela componente h
             </summary>
         </member>
         <member name="T:BaseCoordinates.Elements.EastingNorthing">
@@ -643,6 +1001,11 @@
             define e retorna o valor da coordenada Z
             </summary>
         </member>
+        <member name="P:BaseCoordinates.Elements.EastingNorthing.time">
+            <summary>
+            define e retorna o valor o tempo
+            </summary>
+        </member>
         <member name="P:BaseCoordinates.Elements.EastingNorthing.SigmaE">
             <summary>
             define e retorna o valor de sigma de E
@@ -746,349 +1109,6 @@
         <member name="T:BaseCoordinates.Elements.CompareH">
             <summary>
             comparar Objecto EastingNorthing pela componente H
-            </summary>
-        </member>
-        <member name="M:BaseCoordinates.Elements.Height.addDados(System.Double)">
-            <summary>
-            Adiciona um valor à lista de Doubles de dados diversos
-            </summary>
-        </member>
-        <member name="M:BaseCoordinates.Elements.Height.addDados(System.String)">
-            <summary>
-            Adiciona um valor à lista de Strings de dados diversos
-            </summary>
-        </member>
-        <member name="M:BaseCoordinates.Elements.Height.CompareTo(BaseCoordinates.Elements.Height)">
-            <summary>
-            compara o id com outro objecto Height
-            </summary>
-            <param name="other"></param>
-            <returns></returns>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Height.ID">
-            <summary>
-            define e retorna o valor de ID
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Height.H">
-            <summary>
-            define e retorna o valor da coordenada H
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Height.SigmaH">
-            <summary>
-            define e retorna o valor de sigma de H
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Height.Vel_H">
-            <summary>
-            define e retorna o valor de velocidade da componente H
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Height.Sigma_Vel_H">
-            <summary>
-            define e retorna o valor de sigma da velocidade da componente H
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Height.Acel_H">
-            <summary>
-            define e retorna o valor da aceleração da componente H
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Height.Sigma_Acel_H">
-            <summary>
-            define e retorna o valor de sigma da aceleração da componente H
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Height.ListDadosDivS">
-            <summary>
-            define e retorna a lista de dados diversos em formato string
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Height.ListDadosDivInt">
-            <summary>
-            define e retorna a lista de dados diversos em formato string
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Height.ListDadosDivD">
-            <summary>
-            define e retorna a lista de dados diversos em formato double
-            </summary>
-        </member>
-        <member name="T:BaseCoordinates.Elements.CompareHeight">
-            <summary>
-            comparar Objecto Height pela componente Height
-            </summary>
-        </member>
-        <member name="M:BaseCoordinates.Elements.Ll.#ctor(System.Double,System.Double,System.Double,System.String)">
-            <summary>
-            cria um objecto ll
-            </summary>
-            <param name="log_"></param>
-            <param name="lat_"></param>
-            <param name="h_"></param>
-        </member>
-        <member name="M:BaseCoordinates.Elements.Ll.#ctor(System.Double,System.Double,System.Double)">
-            <summary>
-            cria um objecto ll
-            </summary>
-            <param name="log_"></param>
-            <param name="lat_"></param>
-            <param name="h_"></param>
-        </member>
-        <member name="M:BaseCoordinates.Elements.Ll.#ctor">
-            <summary>
-            cria um objecto ll
-            </summary>
-        </member>
-        <member name="M:BaseCoordinates.Elements.Ll.addDados(System.Double)">
-            <summary>
-            Adiciona um valor à lista de Doubles de dados diversos
-            </summary>
-        </member>
-        <member name="M:BaseCoordinates.Elements.Ll.addDados(System.String)">
-            <summary>
-            Adiciona um valor à lista de Strings de dados diversos
-            </summary>
-        </member>
-        <member name="M:BaseCoordinates.Elements.Ll.setLatLongH(System.Double,System.Double,System.Double)">
-            <summary>
-            define o valor das componentes Longitude, Latitude e h respectivamente
-            </summary>
-            <param name="log_"></param>
-            <param name="lat_"></param>
-            <param name="h_"></param>
-        </member>
-        <member name="M:BaseCoordinates.Elements.Ll.setSigmaLatLongH(System.Double,System.Double,System.Double)">
-            <summary>
-            define o valor de sigma das componentes  Longitude, Latitude e h respectivamente
-            </summary>
-            <param name="siglog"></param>
-            <param name="siglat"></param>
-            <param name="sigh"></param>
-        </member>
-        <member name="M:BaseCoordinates.Elements.Ll.setVel_LatLongH(System.Double,System.Double,System.Double)">
-            <summary>
-            define o valor das velocidadades das componentes Longitude, Latitude e h respectivamente
-            </summary>
-            <param name="vellog"></param>
-            <param name="vellat"></param>
-            <param name="velh"></param>
-        </member>
-        <member name="M:BaseCoordinates.Elements.Ll.setSigmaVel_LatLongH(System.Double,System.Double,System.Double)">
-            <summary>
-            define o valor de sigma das velocidadades das componentes Longitude, Latitude e h respectivamente
-            </summary>
-            <param name="sigVellog"></param>
-            <param name="sigVellat"></param>
-            <param name="sigVelh"></param>
-        </member>
-        <member name="M:BaseCoordinates.Elements.Ll.setAcel_LatLongH(System.Double,System.Double,System.Double)">
-            <summary>
-            define o valor das aceleraçõess das componentes Longitude, Latitude e h respectivamente
-            </summary>
-            <param name="acellog"></param>
-            <param name="acellat"></param>
-            <param name="acelh"></param>
-        </member>
-        <member name="M:BaseCoordinates.Elements.Ll.setSigmaAcel_LatLongH(System.Double,System.Double,System.Double)">
-            <summary>
-            define o valor de sigma das acelerações das componentes Longitude, Latitude e h respectivamente
-            </summary>
-            <param name="sigAcellog"></param>
-            <param name="sigAcellat"></param>
-            <param name="sigAcelh"></param>
-        </member>
-        <member name="M:BaseCoordinates.Elements.Ll.CompareTo(BaseCoordinates.Elements.Ll)">
-            <summary>
-            compara o id com outro objecto Ll
-            </summary>
-            <param name="other"></param>
-            <returns></returns>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.ID">
-            <summary>
-            define e retorna o valor de ID
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.Lat">
-            <summary>
-            define e retorna o valor de Latitude
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.Long">
-            <summary>
-            define e retorna o valor de Longitude
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.H">
-            <summary>
-            define e retorna o valor de Altitude
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.SigmaLat">
-            <summary>
-            define e retorna o valor de sigma da Latitude
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.SigmaLong">
-            <summary>
-            define e retorna o valor de sigma da Longitude
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.SigmaH">
-            <summary>
-            define e retorna o valor de sigma da Longitude
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.Vel_Lat">
-            <summary>
-            define e retorna o valor da velocidade da componente Latitude
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.Vel_Log">
-            <summary>
-            define e retorna o valor da velocidade da componente Longitude
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.Vel_H">
-            <summary>
-            define e retorna o valor da velocidade da componente H
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.Sigma_Vel_Lat">
-            <summary>
-            define e retorna o valor de sigma da velocidade da componente Latitude
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.Sigma_Vel_Long">
-            <summary>
-            define e retorna o valor de sigma da velocidade da componente Longitude
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.Sigma_Vel_H">
-            <summary>
-            define e retorna o valor de sigma da velocidade da componente H
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.Acel_Lat">
-            <summary>
-            define e retorna o valor da aceleração da componente Latitude
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.Acel_Long">
-            <summary>
-            define e retorna o valor da aceleração da componente Longitude
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.Acel_H">
-            <summary>
-            define e retorna o valor da aceleração da componente H
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.Sigma_Acel_Lat">
-            <summary>
-            define e retorna o valor de sigma da aceleração da componente Latitude
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.Sigma_Acel_Long">
-            <summary>
-            define e retorna o valor de sigma da aceleração da componente Longitude
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.Sigma_Acel_H">
-            <summary>
-            define e retorna o valor de sigma da aceleração da componente H
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.ListDadosDivS">
-            <summary>
-            define e retorna a lista de dados diversos em formato string
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.ListDadosDivInt">
-            <summary>
-            define e retorna a lista de dados diversos em formato string
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Elements.Ll.ListDadosDivD">
-            <summary>
-            define e retorna a lista de dados diversos em formato double
-            </summary>
-        </member>
-        <member name="T:BaseCoordinates.Elements.CompareLat">
-            <summary>
-            comparar Objectos Ll pela componente Latitude
-            </summary>
-        </member>
-        <member name="T:BaseCoordinates.Elements.CompareLog">
-            <summary>
-            comparar Objectos Ll pela componente Longitude
-            </summary>
-        </member>
-        <member name="T:BaseCoordinates.Elements.Compareh">
-            <summary>
-            comparar Objectos Ll pela componente h
-            </summary>
-        </member>
-        <member name="T:BaseCoordinates.Geometry.Datum">
-            <summary>
-            Classe datum que contém as componentes:
-            Desvio da vertical (E/N)
-            Ondulação do geóide na origem
-            Latitude Origem
-            Longitude Origem
-            Diferença de Az astronómico com geodésico 
-            Elipsoide de Ref (objecto Elipsoid)
-            </summary>
-        </member>
-        <member name="M:BaseCoordinates.Geometry.Datum.#ctor(BaseCoordinates.Geometry.Elipsoid,System.Double,System.Double)">
-            <summary>
-            define um objecto Datum
-            </summary>
-            <param name="elipsoidIn"></param>
-            <param name="longOrigem"></param>
-            <param name="latOrigem"></param>
-        </member>
-        <member name="M:BaseCoordinates.Geometry.Datum.#ctor(BaseCoordinates.Geometry.Elipsoid)">
-            <summary>
-            define um objecto Datum
-            </summary>
-            <param name="elipsoidIn"></param>
-        </member>
-        <member name="P:BaseCoordinates.Geometry.Datum.NZero">
-            <summary>
-            define e retorna o valor da ondulação do geóide na origem
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Geometry.Datum.LongOrigem">
-            <summary>
-            define e retorna o valor da longitude na origem
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Geometry.Datum.LatOrigem">
-            <summary>
-            define e retorna o valor da latitude na origem
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Geometry.Datum.DesvVert_N">
-            <summary>
-            define e retorna o valor do desvio da vertical na origem na componente Norte
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Geometry.Datum.DesvVert_E">
-            <summary>
-            define e retorna o valor do desvio da vertical na origem na componente Este
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Geometry.Datum.Delta_Az">
-            <summary>
-            define e retorna o valor da diferença entre o Az Astronómico com o Az Geodésico
-            </summary>
-        </member>
-        <member name="P:BaseCoordinates.Geometry.Datum.Elipsoid">
-            <summary>
-            define e retorna o elipsoide 
             </summary>
         </member>
     </members>

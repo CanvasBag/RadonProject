@@ -34,6 +34,9 @@
     <DocumentationFile>bin\Release\BaseCoordinates.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BaseTime">
+      <HintPath>..\..\BaseTime\baseTime\bin\Release\BaseTime.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

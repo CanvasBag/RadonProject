@@ -16,7 +16,15 @@ namespace AjustLeastSquare.Statistics
 
         private bool[] vStandTest;
 
-
+        /// <summary>
+        /// PT - Teste DataSnooping - Efectua o cálculo do teste Data Snooping dos resíduos de um ajustamento por mínimos quadrados
+        /// </summary>
+        /// <param name="w">Weight matrix</param>
+        /// <param name="a">Jacobian Matrix - partial derivates to parameters</param>
+        /// <param name="qxx">Var and covar matrix of ajusted parameters</param>
+        /// <param name="v">Residuals matrix</param>
+        /// <param name="var">Variance value of the adjustment, a posteriori</param>
+        /// <param name="rejectionLevel">Level rejection of the test</param>
         public DataSnooping(Matrix w, Matrix a, Matrix qxx, Matrix v, double var, double rejectionLevel)
         {
             this.w = w;
@@ -29,7 +37,7 @@ namespace AjustLeastSquare.Statistics
             ComputeStandardizedResiduals();
         }
 
-        public void ComputeStandardizedResiduals()
+        private void ComputeStandardizedResiduals()
         {
             vStand = new Matrix(v.RowCount, v.ColumnCount);
             absVStand = new Matrix(v.RowCount, v.ColumnCount);
