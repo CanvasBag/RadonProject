@@ -73,3 +73,12 @@ D:\Tese\Radon Project\02 - Projectos Visual Studio\SolNNet\SolNNet\bin\Debug\Sol
 D:\GitHub\RadonProject\SolNNet\SolNNet\bin\Debug\SolNNet.exe.config
 D:\GitHub\RadonProject\SolNNet\SolNNet\obj\x86\Debug\SolNNet.exe
 D:\GitHub\RadonProject\SolNNet\SolNNet\obj\x86\Debug\SolNNet.pdb
+D:\GitHub\RadonProject\SolNNet\SolNNet\obj\x86\Debug\SolNNet.csprojResolveAssemblyReference.cache
+D:\GitHub\RadonProject\SolNNet\SolNNet\obj\x86\Debug\SolNNet.AboutBox.resources
+D:\GitHub\RadonProject\SolNNet\SolNNet\obj\x86\Debug\SolNNet.DataConvertFormatsForm.resources
+D:\GitHub\RadonProject\SolNNet\SolNNet\obj\x86\Debug\SolNNet.FormDxfExport.resources
+D:\GitHub\RadonProject\SolNNet\SolNNet\obj\x86\Debug\SolNNet.SolNNetPrincipalForm.resources
+D:\GitHub\RadonProject\SolNNet\SolNNet\obj\x86\Debug\SolNNet.About.resources
+D:\GitHub\RadonProject\SolNNet\SolNNet\obj\x86\Debug\SolNNet.ResiduesForm.resources
+D:\GitHub\RadonProject\SolNNet\SolNNet\obj\x86\Debug\SolNNet.Properties.Resources.resources
+D:\GitHub\RadonProject\SolNNet\SolNNet\obj\x86\Debug\SolNNet.csproj.GenerateResource.Cache

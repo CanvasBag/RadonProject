@@ -20,6 +20,12 @@ namespace BaseCoordinates.Seed
         private List<EastingNorthing> pontosEN;
         private List<Ll> pontosLL;
         private List<Ret> pontosRET;
+        private List<String> dadosDivS;
+        private List<Double> dadosDivD;
+        private List<Int32> dadosDivInt;
+        private Ll centroidLl;
+        private EastingNorthing centroidEN;
+        private Ret centroidRET;
 
         /// <summary>
         /// Cria um objecto geoCoord apartir de uma lista de objectos EastingNorthing
@@ -426,6 +432,66 @@ namespace BaseCoordinates.Seed
         {
             IComparer<Ret> zCompare = new CompareZ();
             pontosRET.Sort(zCompare);
+        }
+
+        /// <summary>
+        /// define e retorna a lista de dados diversos em formato string
+        /// null por defeito
+        /// </summary>
+        public List<String> GeocoordDadosDivS
+        {
+            get { return dadosDivS; }
+            set { dadosDivS = value; }
+        }
+
+        /// <summary>
+        /// define e retorna a lista de dados diversos em formato int32
+        /// null por defeito
+        /// </summary>
+        public List<Int32> GeocoordDadosDivInt
+        {
+            get { return dadosDivInt; }
+            set { dadosDivInt = value; }
+        }
+
+        /// <summary>
+        /// define e retorna a lista de dados diversos em formato double
+        /// null por defeito
+        /// </summary>
+        public List<Double> GeocoordDadosDivD
+        {
+            get { return dadosDivD; }
+            set { dadosDivD = value; }
+        }
+
+        /// <summary>
+        /// define e retorna o valor de centroid referente aos dados da lista de objectos MP
+        /// null por defeito
+        /// </summary>
+        public EastingNorthing CentroidEN
+        {
+            get { return centroidEN; }
+            set { centroidEN = value; }
+        }
+
+        /// <summary>
+        /// define e retorna o valor de centroid referente aos dados da lista de objectos Ll
+        /// null por defeito
+        /// </summary>
+        public Ll CentroidLL
+        {
+            get { return centroidLl; }
+            set { centroidLl = value; }
+        }
+
+        /// <summary>
+        /// define e retorna o valor de centroid referente aos dados da lista de objectos Ret
+        /// null por defeito
+        /// </summary>
+        public Ret CentroidRET
+        {
+            get { return centroidRET; }
+            set { centroidRET = value; }
         }
     }    
 }
